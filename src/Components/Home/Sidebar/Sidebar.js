@@ -36,42 +36,45 @@ const Sidebar = ({ collapsed, toggled, handleToggleSidebar }) => {
 
 
     return (
-        <>
-            <div id="sidebar">
 
-                {/* collapsed props to change menu size using menucollapse state */}
-                <ProSidebar
+        <div id="sidebar">
+
+            {/* collapsed props to change menu size using menucollapse state */}
+            {/* <ProSidebar
                     collapsed={menuCollapse}
                     breakPoint="md"
 
 
-                >
-                    <SidebarHeader>
-                        {/* <div className="logotext"> */}
-                        {/* small and big change using menucollapse state */}
-                        {/* <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
+                > */}
+            {/* <SidebarHeader> */}
+            {/* <div className="logotext"> */}
+            {/* small and big change using menucollapse state */}
+            {/* <p>{menuCollapse ? "Logo" : "Big Logo"}</p>
                         </div> */}
-                        <div className="closemenu" >
-                            {/* changing menu collapse icon on click */}
-                            {/* {menuCollapse ? (
+            {/* <div className="closemenu" > */}
+            {/* changing menu collapse icon on click */}
+            {/* {menuCollapse ? (
                                 <FiArrowRightCircle />
                             ) : (
                                 <FiArrowLeftCircle />
                             )} */}
-                            <FaBars style={{ cursor: 'pointer' }} onClick={menuIconClick} />
+            {/* <FaBars style={{ cursor: 'pointer' }} onClick={menuIconClick} />
                         </div>
                     </SidebarHeader>
-                    <SidebarContent>
-                        <Menu iconShape="square">
-                            <MenuItem active={true} icon={<FiHome />}>
+                    <SidebarContent> */}
+            {/* <Menu iconShape="square"> */}
+            {/* <MenuItem active={true} icon={<FiHome />}>
                                 Home
                             </MenuItem>
                             <MenuItem icon={<FaStar />}>Popular</MenuItem>
                             <MenuItem icon={<FaSun />}>Summer Collection</MenuItem>
-                            <MenuItem icon={<FaSun />}>Hygine</MenuItem>
-                            <SubMenu title="Fruit & Vagetables" icon={<FaAppleAlt />}>
+                            <MenuItem icon={<FaSun />}>Hygine</MenuItem> */}
+            {/* <SubMenu title="Fruit & Vagetables" icon={<FaAppleAlt />}>
                                 <MenuItem>Fruits</MenuItem>
                                 <MenuItem>Vagetables</MenuItem>
+                                    <SubMenu title="Fruit" icon={<FaFish />}>
+                                        <MenuItem >Apple</MenuItem>
+                                    </SubMenu>
                             </SubMenu>
                             <SubMenu title="Meats & Fish" icon={<FaFish />}>
                                 <MenuItem>Fresh Fish</MenuItem>
@@ -126,9 +129,16 @@ const Sidebar = ({ collapsed, toggled, handleToggleSidebar }) => {
                         </Menu>
                     </SidebarContent>
 
-                </ProSidebar>
-            </div>
-        </>
+                </ProSidebar> */}
+            <Menu iconShape="square">
+                <SubMenu title="Components" icon={<FaHome />}>
+                    <MenuItem>Component 1</MenuItem>
+                    <SubMenu title="Sub Component 1" icon={<FaFish />}>
+                       <MenuItem>Sub Component 1.1</MenuItem>
+                    </SubMenu>
+                </SubMenu>
+            </Menu>
+        </div>
 
     );
 };
