@@ -11,7 +11,7 @@ import {
 
 import 'react-pro-sidebar/dist/css/styles.css';
 import { FaAppleAlt, FaStar, FaSun, FaFish, FaBaby, FaHome, FaTachometerAlt, FaCar ,FaBars} from 'react-icons/fa';
-import { FiHome, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { FiHome } from "react-icons/fi";
 import './Sidebar.css'
 
 
