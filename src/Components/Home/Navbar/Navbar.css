@@ -1,0 +1,50 @@
+.nav-mid ul, .nav-end ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.nav-mid ul li, .nav-end ul li {
+    margin: 0px 4px;
+}
+.nav-mid button, .nav-end button{
+    padding: 3px 12px;
+    border: 1px solid #6C757D;
+    border-radius: 30px;
+    font-weight: 400;
+}
+.nav-mid button:hover, .active,.nav-end button:hover{
+    background-color: #6C757D;
+    color: white;
+}
+.logo{
+    color: #586067;
+    font-size: 35px;
+    cursor: pointer;
+}
+.active-post{
+    background-color: royalblue;
+    color: white;
+    border: 1px solid royalblue;
+}
+.active-post:hover{
+    background-color: royalblue!important;
+}
+.nav-bar{
+    background-color: #F5F5F5;
+    padding: 0px 30px;
+    border-bottom: 1px solid #7f828640;
+}
+.navbar-icon{
+    background-color: #c0bbbb;
+    border-radius: 50%;
+    font-size: 23px;
+    padding: 4px 0px;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+.svg-inline--fa.fa-w-10{
+    width: 22px;
+}
+.navbar{
+    padding: 0;
+}
