@@ -1,4 +1,4 @@
-<h2 style="color:red">Documentation of this React.js Project</h2>
+<h2 style="color:blue">Documentation of this React.js Project</h2>
 
 Live Demo:
 
