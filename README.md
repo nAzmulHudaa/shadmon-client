@@ -1,5 +1,4 @@
-Documentation of this React.js Project
-
+<b>Documentation of this React.js Project</b>
 Live Demo:
 
 How to re-use this project in your own project:
@@ -10,7 +9,8 @@ Editing Navbar Of Your Project:
 
 Go to the src> components> navbar> navbar.js
 
-Change The Logo Of Navbar:
+<b>Change The Logo Of Navbar:</b>
+
 ```
 <div className="logo-div">
     <h3 className="logo">shadamon</h3>
