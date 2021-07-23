@@ -10,7 +10,7 @@ Editing Navbar Of Your Project:
 
 Go to the src> components> navbar> navbar.js
 
-<b>Change The Logo Of Navbar:</b>
+##Change The Logo Of Navbar:
 
 ```
 <div className="logo-div">
