@@ -4,12 +4,12 @@ import './NavBottom.css';
 
 const NavBottom = () => {
     return (
-        <div className="d-flex navBottomContainer">
-            <div className="d-flex navItem m-auto">
-                <p className="me-5 selected">All Product</p>
-                <p className="me-5">All Order</p>
-                <p className="me-5">My Page</p>
-                <p className="me-5">Promote</p>
+        <div className="d-flex align-items-center font navBottomContainer">
+            <div className="navItem d-flex m-auto ">
+                <p className="me-4">All Product</p>
+                <p className="me-4">All Order</p>
+                <p className="me-4">My Page</p>
+                <p className="me-4">Promote</p>
             </div>
         </div>
     );

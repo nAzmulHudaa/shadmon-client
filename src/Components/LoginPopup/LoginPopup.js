@@ -51,10 +51,13 @@ export default function LoginPopup() {
   const handleClose = () => {
     setOpen(false);
   };
+  const handleGoogle =()=>{ 
+    window.location.assign('http://admin.atikshakil.info/social/login/facebook')
+  }
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
+      <button type="button"  onClick={handleOpen}>
         Login
       </button>
       <Modal
@@ -113,13 +116,14 @@ export default function LoginPopup() {
                         
                         <Button
                         variant="outlined"
-                        >Log in with Google.</Button>
+                        onClick={handleGoogle}
+                        >Log in with Google</Button>
                         </div>
                         <div className="mt-3">
                         <Button
                         variant="contained"
                         color="primary"
-                        >Log in with Facebook.</Button>
+                        >Log in with Facebook</Button>
                         </div>
                         <div className="mt-3 mb-5">
                         <Button
