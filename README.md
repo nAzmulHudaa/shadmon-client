@@ -1,6 +1,6 @@
-<h2> + Documentation of this React.js Project</h2>
+# Documentation of this React.js Project
 
-+ Live Demo:
+Live Demo:
 
 How to re-use this project in your own project:
 
