@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css'
+import '../Navbar/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faPhoneAlt, faShoppingCart, faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import LoginPopup from '../../LoginPopup/LoginPopup';

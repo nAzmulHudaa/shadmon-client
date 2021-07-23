@@ -1,0 +1,11 @@
+.navBottomContainer {
+    border-bottom: 1px solid lightgray;
+    margin-top: 10px;
+}
+.navItem p {
+    font-weight: 500;
+    cursor: pointer;
+}
+.selected {
+    border-bottom: 5px solid rgb(67, 108, 241);
+}
