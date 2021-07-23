@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faPhoneAlt, faShoppingCart, faUserAlt} from '@fortawesome/free-solid-svg-icons';
+import LoginPopup from '../../LoginPopup/LoginPopup';
 
 
 const Navbar = () => {
@@ -19,6 +20,7 @@ const Navbar = () => {
                                                 <li><button className=''>Loan</button></li>
                                                 <li><button className=''>Offers</button></li>
                                                 <li><button className=''>Bid</button></li>
+                                                <LoginPopup />
                                         </ul>
                                 </div>
                                 <div className="nav-items nav-end">
