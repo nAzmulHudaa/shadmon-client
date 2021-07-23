@@ -1,4 +1,4 @@
-<h2 style="color:blue;text-align:center;"Documentation of this React.js Project</h2>
+<h2 style="color:blue;text-align:center;">Documentation of this React.js Project</h2>
 
 Live Demo:
 
