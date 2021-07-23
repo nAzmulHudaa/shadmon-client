@@ -1,4 +1,5 @@
-<b>Documentation of this React.js Project</b>
+<h2 style="color:red">Documentation of this React.js Project</h2>
+
 Live Demo:
 
 How to re-use this project in your own project:
