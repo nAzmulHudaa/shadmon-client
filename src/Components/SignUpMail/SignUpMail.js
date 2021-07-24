@@ -3,13 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { Button, Grid, Typography } from '@material-ui/core';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SignUpModal from '../SignUpModal/SignUpModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchDollar, faTag, faTags } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { Typography } from '@material-ui/core';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,13 +29,8 @@ const useStyles = makeStyles((theme) => ({
     color: 'green',
     cursor: 'pointer',
     position: 'relative',
-    left: 320,
-    top: '-19px'
-},
-leftGrid: {
-  borderRight: '1px solid lightgrey'
-}
-}));
+  },
+}))
 
 
 export default function TransitionsModal() {
@@ -80,11 +76,7 @@ export default function TransitionsModal() {
 
   return (
     <div>
-      <Button type="button"
-        variant="contained"
-        onClick={handleOpen}>
-        Continue with Email
-      </Button>
+
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -99,6 +91,7 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+
             <Typography
               variant="h5"
               align="center"
@@ -124,6 +117,7 @@ export default function TransitionsModal() {
           </div>
         </Fade>
       </Modal>
+      
     </div>
   );
 }

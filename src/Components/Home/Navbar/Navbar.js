@@ -16,11 +16,13 @@ const Navbar = () => {
                                                 <h3 className="logo" herf="/">shadamon</h3>
                                         </div>
                                 </div>
+
+
                                 <div className="nav-mobile">
                                         
                                                 <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
                                                 <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
-                                                <li><FontAwesomeIcon icon={faUserAlt} className='navbar-icon' /></li>
+                                                <LoginPopup />
                                                 <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
                                                 <LoginPopup />
                                 </div>
