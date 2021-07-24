@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Button, Typography } from '@material-ui/core';
+import { useForm } from "react-hook-form";
+import { useState } from 'react';
+import { UserContext } from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -20,6 +23,36 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TransitionsModal() {
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+  const [token,setToken] = useState('')
+  const onSubmit = data =>{
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const loginCredentials = {
+      email:email,
+      password:password
+    }
+    fetch('http://admin.atikshakil.info/api/login',{
+      method: 'POST',
+      headers: {
+        'content-type':'application/json'
+      },
+      body: JSON.stringify(loginCredentials)
+    })
+    .then(response => response.json())
+    .then(data=>{
+      //console.log(data);
+      setToken(data)
+      sessionStorage.setItem('token',data.token);
+      window.location.assign('/');
+      setLoggedInUser(true);
+    })
+  }
+  console.log(token);
+
+
+
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -59,14 +92,14 @@ export default function TransitionsModal() {
                 Sign Up With Email
             </Typography>
             <br />
-            <form action="">
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <label htmlFor="">Email</label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" name='email' id='email' />
                 <br />
                 <label htmlFor="">Password</label>
-                <input type="password" className="form-control" />
+                <input name='password' type="password" className="form-control" id='password' />
                 <br />
-                <button className="btn btn-success">Submit</button>
+                <input type="submit" className='submitBtn btn btn-primary'  />
                 <div className="mt-5 text-center">
                     <h6>Forgot Password?</h6>
                     <Typography>Don't have an account yet?</Typography>
