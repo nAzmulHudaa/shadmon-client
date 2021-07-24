@@ -7,7 +7,7 @@ import { Button, Grid, Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchDollar, faTag, faTags } from '@fortawesome/free-solid-svg-icons'
 import CancelIcon from '@material-ui/icons/Cancel';
-
+import SignUpMail from '../../Components/SignUpMail/SignUpMail';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -51,6 +51,8 @@ export default function LoginPopup() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  
 
   return (
     <div>
@@ -122,10 +124,8 @@ export default function LoginPopup() {
                         >Log in with Facebook.</Button>
                         </div>
                         <div className="mt-3 mb-5">
-                        <Button
-                        variant="contained"
-                        color="secondary"
-                        >Log in with Email.</Button>
+                        
+                        <SignUpMail />
                         </div>
 
                         <div>
@@ -140,6 +140,7 @@ export default function LoginPopup() {
           </div>
         </Fade>
       </Modal>
+      
     </div>
   );
 }
