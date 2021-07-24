@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import {
     ProSidebar,
     Menu,
@@ -7,69 +8,45 @@ import {
     SubMenu
 } from "react-pro-sidebar";
 import 'react-pro-sidebar/dist/css/styles.css';
-import { FaFish, FaBaby, FaCar, FaTeamspeak, FaAddressBook } from 'react-icons/fa';
-import { FiHome } from "react-icons/fi";
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAppleAlt, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faAirFreshener, faAppleAlt, faLaptopMedical, faMapPin, faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 const TopSidebar = ({ category }) => {
+ 
     console.log(category)
-    const { name, sub_category } = category;
+    const { name, bn_name, icon, sub_category } = category;
+    const sub_category_list = sub_category.map((item, index) => {
+        return {
+            name: item.name,
+            bn_name: item.bn_name,
+            icon: item.icon
+        };
+    
+    })
+    console.log(sub_category_list[0])
 
-
-
+  
     return (
         <div>
             <ProSidebar
                 breakPoint="md"
             >
-
                 <SidebarContent>
                     <Menu iconShape="square">
-                        <MenuItem active={false} icon={<FiHome />}>
-                            Home
-                        </MenuItem>
-                        <SubMenu title={name} icon={<FontAwesomeIcon icon={faStar} />}>
-                            <span className='d-flex'>
-                                <FontAwesomeIcon style={{  marginRight:'10px',marginLeft:'25px',marginTop:'10px' }} icon={faAppleAlt} />
-                                <MenuItem>{sub_category[0].bn_name}</MenuItem>
-                            </span>
-                            <span className='d-flex'>
-                                <FontAwesomeIcon style={{  marginRight:'10px',marginLeft:'25px',marginTop:'10px' }} icon={faAppleAlt} />
-                                <MenuItem>{sub_category[0].name}</MenuItem>
-                            </span>
-                            <span className='d-flex'>
-                                <FontAwesomeIcon style={{  marginRight:'10px',marginLeft:'25px',marginTop:'10px' }} icon={faAppleAlt} />
-                                <MenuItem>{sub_category[0].name}</MenuItem>
-                            </span>
+                        
+                        <SubMenu title={name} icon={<FontAwesomeIcon icon={faLaptopMedical} />}>
+                         {
+                             sub_category_list[0]?   <span className='d-flex'>
+                             <FontAwesomeIcon style={{  marginRight:'10px',marginLeft:'25px',marginTop:'10px' }} icon={faAppleAlt} />
+                             <MenuItem>{sub_category_list[0].name}</MenuItem>
+                         </span>:null
+                         }
                         </SubMenu>
-                        <SubMenu title="Meats & Fish" icon={<FaFish />}>
-                            <MenuItem>Fresh Fish</MenuItem>
-                            <MenuItem>Meat</MenuItem>
-                        </SubMenu>
-                        <SubMenu title="Meats & Fish" icon={<FaBaby />}>
-                            <MenuItem>Fresh Fish</MenuItem>
-                            <MenuItem>Meat</MenuItem>
-                        </SubMenu>
-                        <SubMenu title="Meats & Fish" icon={<FaTeamspeak />}>
-                            <MenuItem>Fresh Fish</MenuItem>
-                            <MenuItem>Meat</MenuItem>
-                        </SubMenu>
-                        <SubMenu title="Meats & Fish" icon={<FaAddressBook />}>
-                            <MenuItem>Fresh Fish</MenuItem>
-                            <MenuItem>Meat</MenuItem>
-                        </SubMenu>
-                        <SubMenu title="Meats & Fish" icon={<FaFish />}>
-                            <MenuItem>Fresh Fish</MenuItem>
-                            <MenuItem>Meat</MenuItem>
-                        </SubMenu>
-
-
-                        <MenuItem icon={<FaCar />}>Vehicle Essentials</MenuItem>
+                       
                     </Menu>
                 </SidebarContent>
 

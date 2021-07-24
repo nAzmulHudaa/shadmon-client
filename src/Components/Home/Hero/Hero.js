@@ -66,9 +66,35 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hero-box col-md-10 m-auto">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit, illo magnam eligendi, iure numquam earum nobis autem minima esse repudiandae tempore eum nesciunt, nihil ex tempora nostrum quae hic recusandae deleniti natus laudantium porro nulla accusantium. Adipisci earum illum optio vero error ut aliquam, quaerat placeat possimus dolorem sapiente deleniti nihil sint. Fugiat quam at, accusamus labore incidunt, corrupti dolorem optio et temporibus quos odit? Ut consequuntur, error, nostrum delectus quaerat odit tempore aspernatur, nihil vero odio quasi harum! Pariatur optio possimus repudiandae sequi ea officiis provident unde, laborum iusto quas beatae aliquid dicta illum ipsam fuga a voluptas atque ab cupiditate enim dolor quae. Aperiam sed autem delectus magni ipsa veritatis facilis velit porro, illo iure blanditiis ex reiciendis perspiciatis sint maxime ad cumque voluptates voluptatibus! Vitae sapiente cum saepe dolorum modi ullam. Dolor provident suscipit, harum itaque porro commodi nesciunt nobis quo tenetur mollitia debitis possimus ex repellendus ut officia ipsa necessitatibus magnam! Doloribus laudantium harum iusto ratione veritatis optio culpa ut, ea est, necessitatibus maiores laborum minima sed facere at iure! Assumenda expedita voluptates atque rem nostrum quis. Nobis illo consequuntur deleniti veniam eveniet corrupti quis, et veritatis nihil voluptatum, ea officia quaerat vel, eos cumque?</p>
-                            <img src={hero} alt="" className='w-50' />
+                        <div className="col-md-7  m-auto">
+                            <div className="hero-box">
+                                <div className="overlay-text">
+                                    <h2>Most Popular Choice!</h2>
+                                </div>
+                                <div className="hero-img">
+                                    <img src={hero} alt="apartment" className='w-100 rounded-top' />
+                                </div>
+                                <div className="hero-content mt-md-2 mb-md-2">
+                                    <h5 style={{fontSize:'23px' }}>2 BHK Residential Apartment in Chandivali</h5>
+                                    <div className="hero-mid d-flex">
+                                        <div className="first d-flex">
+                                            <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2'/>
+                                            <h6>Chittagong</h6>
+                                        </div>
+                                        <div className="second d-flex">
+                                            <FontAwesomeIcon icon={faBookmark} style={{ color: '#6C757D' }}className='mt-md-1 mt-1 me-1 me-md-2 ms-md-2 ms-0'/>
+                                            <h6>Residential</h6>
+                                        </div>
+                                    </div>
+                                    <div className="price d-flex">
+                                        <h2>$2,500 Cr</h2>
+                                    </div>
+                                    <div className="last d-flex">
+                                        <p>Miami Trading, 14 people connected</p>
+                                        <button className='btn btn-outline-secondary details'>See Details</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,4 +103,4 @@ const Hero = () => {
             );
 };
 
-            export default Hero;
+export default Hero;
