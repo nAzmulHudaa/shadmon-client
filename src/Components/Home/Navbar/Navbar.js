@@ -10,10 +10,10 @@ const Navbar = () => {
 
         return (
                 <div className="font container-fluid  nav-bar">
-                        <div className="navbar navbar-expand-lg navbar-light d-flex">
+                        <div className="navbar container navbar-expand-lg navbar-light d-flex">
                                 <div className="nav-contents">
                                         <div className="logo-div">
-                                                <h3 className="logo">shadamon</h3>
+                                                <h3 className="logo" herf="/">shadamon</h3>
                                         </div>
                                 </div>
                                 <div className="nav-mobile">

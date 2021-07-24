@@ -57,3 +57,12 @@
 .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item:before {
     display: none;
 }
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item > div > ul{
+    padding-top: 0px;
+}
+#sidebar{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 60px;
+}

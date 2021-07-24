@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './Hero.css'
 import hero from '../../../images/hero.jpg'
 import Sidebar from '../Sidebar/Sidebar';
+import Sorting from '../Sidebar/Sorting';
 
 
 const Hero = () => {
@@ -11,7 +12,9 @@ const Hero = () => {
     const info = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deleniti quibusdam possimus, voluptatum minima commodi dolore excepturi, veniam et facere culpa natus impedit placeat sed sit. Libero debitis nesciunt quasi.'
     return (
         <div className='font hero-section'>
+            
             <div className="d-flex  justify-content-center">
+              
                 <Sidebar/>
                 <div className="w-75 row justify-content-center">
                     <div className="hero-content">

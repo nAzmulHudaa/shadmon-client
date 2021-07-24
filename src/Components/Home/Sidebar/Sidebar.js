@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import 'react-pro-sidebar/dist/css/styles.css';
 import './Sidebar.css';
+import Sorting from './Sorting';
 import TopSidebar from './TopSidebar';
 
 const Sidebar = () => {
@@ -27,6 +28,7 @@ const Sidebar = () => {
     return (
         
             <div id="sidebar">
+              <Sorting/>
                 {
                     categories.map(category => <TopSidebar category={category} key={category.id}></TopSidebar>)
                 }
