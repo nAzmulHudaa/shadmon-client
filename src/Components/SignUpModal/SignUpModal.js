@@ -55,9 +55,9 @@ export default function SignUpModal() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Login
-      </button>
+      <Button variant="default" type="button" onClick={handleOpen}>
+        SignUp
+      </Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -109,31 +109,26 @@ export default function SignUpModal() {
                 
                 <Grid item lg={6}>
                     <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
-                    <div className="text-center">
-                        <div className="mt-5">
-                        
-                        <Button
-                        variant="outlined"
-                        >Log in with Google.</Button>
-                        </div>
-                        <div className="mt-3">
-                        <Button
-                        variant="contained"
-                        color="primary"
-                        >Log in with Facebook.</Button>
-                        </div>
-                        <div className="mt-3 mb-5">
-                        
-                        
-                        </div>
-
-                        <div>
-                            <small>
-                            By signing up for an account you agree to our
-                            <a href="#"> Terms and Conditions</a>
-                            </small>
-                        </div>
-                    </div>
+                    
+            <form action="" className="ms-4">
+                <label htmlFor="">Name</label>
+                <input type="text" className="form-control" />
+                <br />
+                <label htmlFor="">Email</label>
+                <input type="text" className="form-control" />
+                <br />
+                <label htmlFor="">Password</label>
+                <input type="password" className="form-control" />
+                <br />
+                <label htmlFor="">Confirm Password</label>
+                <input type="password" className="form-control" />
+                <br />
+                <button className="btn btn-success">Submit</button>
+                <div className="mt-5 text-center">
+                    <Typography>Already Have an Account?</Typography>
+                    <SignUpModal />
+                </div>
+            </form>
                 </Grid>
             </Grid>
           </div>
