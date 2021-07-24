@@ -97,7 +97,9 @@
 
   }
   
-  
+  .dropdown:hover{
+      background: white;
+  }
 @media (min-width: 320px) and (max-width: 480px) {
     .nav-desktop{
         display: none;

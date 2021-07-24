@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Navbar/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faPhoneAlt, faShoppingCart, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import LoginPopup from '../../LoginPopup/LoginPopup';
+import { UserContext } from '../../../App';
 
 
 const Navbar = () => {
+        const [loggedInUser, setLoggedInUser] = useContext(UserContext)
 
 
         return (
@@ -19,12 +21,12 @@ const Navbar = () => {
 
 
                                 <div className="nav-mobile">
-                                        
-                                                <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
-                                                <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
-                                                <LoginPopup />
-                                                <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
-                                                <LoginPopup />
+
+                                        <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
+                                        <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
+                                        <LoginPopup />
+                                        <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
+                                        <LoginPopup />
                                 </div>
 
                                 <div className='nav-desktop ms-lg-auto' >
@@ -35,8 +37,8 @@ const Navbar = () => {
                                                         <li><button className=''>Loan</button></li>
                                                         <li><button className=''>Offers</button></li>
                                                         <li><button className=''>Bid</button></li>
-                                                        
-                                                        
+
+
                                                 </ul>
                                         </div>
                                         <div className="nav-items nav-end ms-4">
@@ -47,18 +49,21 @@ const Navbar = () => {
                                                         <div className="nav-end-icons">
                                                                 <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
                                                                 <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
-                                                                <LoginPopup />
-                                                                <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
+                                                                {
+                                                                loggedInUser.email?                                                                <div class="dropdown" style={{position:'relative',bottom:'3px'}}>
+                                                                <button class="btn btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <FontAwesomeIcon icon={faUserAlt} className='navbar-icon' />
+                                                                </button>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                        <li><a class="dropdown-item" href="/user">Go to your profile</a></li>
+                                                                        <li><a class="dropdown-item" href="/">Log out</a></li>
+                                                                </ul>
+                                                        </div>:<LoginPopup/>
+                                                                }
+                                                                
+
                                                                 {/* <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li> */}
-                                                                <div class="dropdown">
-                                                        <button class="btn btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <FontAwesomeIcon icon={faUserAlt} className='navbar-icon' />
-                                                        </button>
-                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                        <li><a class="dropdown-item" href="/">Go to your profile</a></li>
-                                                        <li><a class="dropdown-item" href="/">Log out</a></li>
-                                                        </ul>
-                                                        </div>
+
                                                         </div>
                                                 </ul>
                                         </div>
