@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'green',
     cursor: 'pointer',
     position: 'relative',
-    left: 630,
+    left: 625,
     top: '-50px'
 }
 }));
