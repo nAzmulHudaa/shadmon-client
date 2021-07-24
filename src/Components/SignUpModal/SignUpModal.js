@@ -7,6 +7,9 @@ import { Button, Grid, Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchDollar, faTag, faTags } from '@fortawesome/free-solid-svg-icons'
 import CancelIcon from '@material-ui/icons/Cancel';
+import { useForm } from "react-hook-form";
+import { useState } from 'react';
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -40,8 +43,34 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function SignUpModal() {
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const onSubmit = data =>{
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const name = document.getElementById('name').value;
+    const confirm = document.getElementById('confirm').value;
+    const registrationCredentials = {
+      name:name,
+      email:email,
+      password:password,
+      password_confirmation:confirm
+
+    }
+    fetch('http://admin.atikshakil.info/api/register',{
+      method: 'POST',
+      headers: {
+        'content-type':'application/json'
+      }, 
+      body: JSON.stringify(registrationCredentials)
+    })
+    .then(response => response.json())
+    .then(data=>{
+      console.log(data);
+      window.location.assign('/')
+    })
+  }
 
   const handleOpen = () => {
     setOpen(true);
@@ -110,20 +139,20 @@ export default function SignUpModal() {
                 <Grid item lg={6}>
                     <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
                     
-            <form action="" className="ms-4">
+            <form  onSubmit={handleSubmit(onSubmit)} className="ms-4">
                 <label htmlFor="">Name</label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" name='name' id='name' />
                 <br />
                 <label htmlFor="">Email</label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" name='email' id='email' />
                 <br />
                 <label htmlFor="">Password</label>
-                <input type="password" className="form-control" />
+                <input type="password" className="form-control" name='password' id='password' />
                 <br />
                 <label htmlFor="">Confirm Password</label>
-                <input type="password" className="form-control" />
+                <input type="password" className="form-control" name='password_confirmation' id='confirm' />
                 <br />
-                <button className="btn btn-success">Submit</button>
+                <input type="submit" className='btn btn-primary'  />
                 <div className="mt-5 text-center">
                     <Typography>Already Have an Account?</Typography>
                     <SignUpModal />

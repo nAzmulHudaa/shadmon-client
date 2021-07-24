@@ -7,21 +7,37 @@ import { UserContext } from '../../../App';
 const UserPage = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
     const [user, setUser] = useState([]);
+    // useEffect(()=>{
+    //     fetch('http://admin.atikshakil.info/api/user-profile',{
+    //        method:'GET',
+    //        headers:{
+    //         "Content-type":"application/json",
+    //         authorization: `Bearer ${sessionStorage.getItem('token')}`
+    //     }
+
+    //     })
+    //     .then(res=>res.json())
+    //     .then(data=>{
+    //         console.log(data);
+    //         setUser(data);
+    //     })
+    // },[])
     useEffect(()=>{
         fetch('http://admin.atikshakil.info/api/user-profile',{
-           method:'GET',
-           headers:{
-            "Content-type":"application/json",
-            Authorization: `Bearer ${sessionStorage.getItem('token')}`
-        }
-
+            method:'GET',
+            headers:{
+                "Content-type":"application/json",
+                authorization: `Bearer ${sessionStorage.getItem('token')}`
+            }
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
+            console.log(data)
             setUser(data);
         })
     },[])
+    console.log(user)
+
     return (
         <div>
             <h1>User Profile</h1>

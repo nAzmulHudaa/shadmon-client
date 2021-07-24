@@ -129,7 +129,7 @@ export default function LoginPopup() {
                         </div>
                         <div className="mt-3 mb-5">
                         
-                        <SignUpMail />
+                        <SignUpMail  />
                         </div>
 
                         <div>

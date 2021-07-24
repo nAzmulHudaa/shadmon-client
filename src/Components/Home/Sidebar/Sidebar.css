@@ -33,9 +33,12 @@
     width: 200px;
     min-width: 200px;
 } */
-
+.pro-sidebar .pro-menu{
+    padding: 0;
+}
 .pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item {
     padding: 8px 43px 8px 15px;
+    
 }
 
 .subMenu-icon {

@@ -10,6 +10,7 @@ import { UserContext } from '../../App';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SignUpModal from '../SignUpModal/SignUpModal';
 
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -35,7 +36,7 @@ export default function TransitionsModal() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
   const [token,setToken] = useState('')
-  const onSubmit = data =>{
+ const onSubmit = data =>{
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const loginCredentials = {
@@ -46,7 +47,7 @@ export default function TransitionsModal() {
       method: 'POST',
       headers: {
         'content-type':'application/json'
-      },
+      }, 
       body: JSON.stringify(loginCredentials)
     })
     .then(response => response.json())
@@ -58,7 +59,7 @@ export default function TransitionsModal() {
       setLoggedInUser(true);
     })
   }
-  console.log(token);
+//  console.log(token);
 
 
 
