@@ -4,13 +4,10 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Button, Typography } from '@material-ui/core';
-<<<<<<< HEAD
 import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import { UserContext } from '../../App';
-=======
 import CancelIcon from '@material-ui/icons/Cancel';
->>>>>>> 24b98965bbe4a8261aa8e1015cbb94acb8f29e8f
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -56,7 +53,7 @@ export default function TransitionsModal() {
       //console.log(data);
       setToken(data)
       sessionStorage.setItem('token',data.token);
-      window.location.assign('/');
+      window.location.assign('/user');
       setLoggedInUser(true);
     })
   }
