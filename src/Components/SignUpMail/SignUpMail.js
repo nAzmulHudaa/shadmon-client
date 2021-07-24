@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import { UserContext } from '../../App';
 import CancelIcon from '@material-ui/icons/Cancel';
+import SignUpModal from '../SignUpModal/SignUpModal';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -97,7 +98,7 @@ export default function TransitionsModal() {
             variant="h5"
             align="center"
             >
-                Sign Up With Email
+                Sign In With Email
             </Typography>
             <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
             <br />
@@ -112,7 +113,7 @@ export default function TransitionsModal() {
                 <div className="mt-5 text-center">
                     <h6>Forgot Password?</h6>
                     <Typography>Don't have an account yet?</Typography>
-                    <Button>Sign Up</Button>
+                    <SignUpModal />
                 </div>
             </form>
           </div>
