@@ -35,7 +35,7 @@ const Navbar = () => {
                                                         <li><button className=''>Loan</button></li>
                                                         <li><button className=''>Offers</button></li>
                                                         <li><button className=''>Bid</button></li>
-                                                        <LoginPopup />
+                                                        
                                                 </ul>
                                         </div>
                                         <div className="nav-items nav-end ms-4">
@@ -46,7 +46,7 @@ const Navbar = () => {
                                                         <div className="nav-end-icons">
                                                                 <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
                                                                 <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
-                                                                <li><FontAwesomeIcon icon={faUserAlt} className='navbar-icon' /></li>
+                                                                <LoginPopup />
                                                                 <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
                                                         </div>
                                                 </ul>
