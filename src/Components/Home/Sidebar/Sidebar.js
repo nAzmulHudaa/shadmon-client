@@ -11,7 +11,7 @@ const Sidebar = () => {
     
     useEffect(() => {     
         const getData = async () => {  
-          await axios.get('http://admin.atikshakil.info/api/categories')  
+          await axios.get('https://admin.atikshakil.info/api/categories')  
           .then(data => {  
             console.log(data.data.data) 
             setCategories(data.data.data); 

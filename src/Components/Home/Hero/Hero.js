@@ -1,9 +1,9 @@
 import { faBookmark, faMapMarkerAlt, faSearchLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import Sidebar from '../Sidebar/Sidebar';
 import './Hero.css'
 import hero from '../../../images/hero.jpg'
+import Sidebar from '../Sidebar/Sidebar';
 
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
     return (
         <div className='font hero-section'>
             <div className="d-flex  justify-content-center">
-                <Sidebar />
+                <Sidebar/>
                 <div className="w-75 row justify-content-center">
                     <div className="hero-content">
                         <div className="hero-icons">
