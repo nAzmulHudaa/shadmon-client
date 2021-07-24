@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Button, Typography } from '@material-ui/core';
+import CancelIcon from '@material-ui/icons/Cancel';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -17,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
     width: '50%',
     borderRadius: 10,
   },
+  cancelBtn: {
+    color: 'green',
+    cursor: 'pointer',
+    position: 'relative',
+    left: 625,
+    top: '-50px'
+}
 }));
 
 export default function TransitionsModal() {
@@ -58,6 +66,7 @@ export default function TransitionsModal() {
             >
                 Sign Up With Email
             </Typography>
+            <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
             <br />
             <form action="">
                 <label htmlFor="">Email</label>
