@@ -40,6 +40,12 @@
     padding: 8px 43px 8px 15px;
     
 }
+.pro-menu ,.shaped, .square ul{
+    list-style: none;
+}
+.pro-menu,.shaped,.square ul li{
+    list-style: none;
+}
 
 .subMenu-icon {
     position: relative;

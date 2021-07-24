@@ -52,6 +52,9 @@ export default function LoginPopup() {
     setOpen(false);
   };
   const handleGoogle =()=>{ 
+    window.location.assign('http://admin.atikshakil.info/social/login/google')
+  }
+  const handleFacebook =()=>{ 
     window.location.assign('http://admin.atikshakil.info/social/login/facebook')
   }
 
@@ -125,6 +128,7 @@ export default function LoginPopup() {
                         <Button
                         variant="contained"
                         color="primary"
+                        onClick={handleFacebook}
                         >Log in with Facebook</Button>
                         </div>
                         <div className="mt-3 mb-5">
