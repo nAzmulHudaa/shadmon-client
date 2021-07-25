@@ -23,7 +23,7 @@ const Sorting = () => {
               >
                 <SidebarContent>
                     <Menu iconShape="square">
-                        <SubMenu title="Sorting" className='sub_menu sub_custom' >
+                        <SubMenu title="Sorting" className='sub_menu sub_custom' open='true' >
                             <span className="d-flex  " >
                                 <FontAwesomeIcon icon={faCar} style={{fontSize:'14px'}} className='sub_menu_icon'/>
                                 <MenuItem >Urgent</MenuItem>

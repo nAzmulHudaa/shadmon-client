@@ -35,7 +35,7 @@ const Sidebar = () => {
       <ProSidebar>
         <SidebarContent>
           <Menu iconShape='square'>
-            <SubMenu title='All Categories' className='sub_menu'>
+            <SubMenu title='All Categories' className='sub_menu' open='true' >
               {
                 categories.map(category => <TopSidebar category={category} key={category.id}></TopSidebar>)
               }
@@ -68,8 +68,8 @@ const Sidebar = () => {
             </SubMenu>
           </Menu>
         </SidebarContent>
-        <SidebarFooter>
-          <div className='footer'>
+        <SidebarFooter className='sidebar_footer'>
+          <div className='footer '>
             <a href='#'>App</a>
             <a href="#">  Add To Home Screen</a>
             <a href="#">  Like us on Facebook</a>

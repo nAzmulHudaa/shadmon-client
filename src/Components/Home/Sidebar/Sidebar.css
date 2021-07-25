@@ -42,6 +42,12 @@
     text-decoration: none;
     color: #908f8f;
 }
+.sidebar_footer{
+    margin-top: 90px;
+}
+.footer{
+    margin-top: 30px;
+}
 .footer a::marker{
     color: #908f8f;
 }
@@ -59,6 +65,9 @@
 .pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item {
     padding: 8px 43px 8px 15px;
     
+}
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item{
+    padding: 8px 43px 0px 15px;
 }
 .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item .pro-arrow-wrapper{
     display: block;
@@ -87,6 +96,10 @@
     margin-top: 30px;
     margin-bottom: 10px;
     position: relative;
-    left: 65px;
+    left: 90px;
     
+}
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item{
+    background: none;
+    padding-left: 20px;
 }
