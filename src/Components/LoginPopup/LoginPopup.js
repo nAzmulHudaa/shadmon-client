@@ -5,7 +5,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { Button, Grid, Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearchDollar, faTag, faTags } from '@fortawesome/free-solid-svg-icons'
+import { faSearchDollar, faTag, faTags, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import CancelIcon from '@material-ui/icons/Cancel';
 import SignUpMail from '../../Components/SignUpMail/SignUpMail';
 
@@ -56,9 +56,10 @@ export default function LoginPopup() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
+      {/* <button type="button" onClick={handleOpen}>
         Login
-      </button>
+      </button> */}
+      <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
