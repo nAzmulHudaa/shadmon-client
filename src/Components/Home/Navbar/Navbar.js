@@ -11,11 +11,11 @@ const Navbar = () => {
 
 
         return (
-                <div className="font container-fluid  nav-bar">
-                        <div className="navbar container navbar-expand-lg navbar-light d-flex">
+                <div className="font  nav-bar">
+                        <div className="navbar container-custom m-auto navbar-expand-lg navbar-light d-flex">
                                 <div className="nav-contents">
                                         <div className="logo-div">
-                                                <h3 className="logo" herf="/">shadamon</h3>
+                                                <a href="/" className='logo'>shadaman</a>
                                         </div>
                                 </div>
 
@@ -29,19 +29,16 @@ const Navbar = () => {
                                         <LoginPopup />
                                 </div>
 
-                                <div className='nav-desktop ms-lg-auto' >
+                                <div className='nav-desktop ms-md-auto '>
 
                                         <div className="nav-items nav-mid me-3 ">
-                                                <ul className='nav-mid-ul'>
-                                                        <li><button className='active'> <b>All Ads</b> </button></li>
+                                                <ul className='nav-mid-ul me-auto'>
                                                         <li><button className=''>Loan</button></li>
                                                         <li><button className=''>Offers</button></li>
                                                         <li><button className=''>Bid</button></li>
-
-
                                                 </ul>
                                         </div>
-                                        <div className="nav-items nav-end ms-4">
+                                        <div className="nav-items nav-end justify-content-center ms-4">
                                                 <ul className='nav-end-ul'>
                                                         <li><button className='active-post'><b>Post Ads</b></button></li>
                                                         <li><button className=''>Inbox</button></li>
@@ -60,7 +57,7 @@ const Navbar = () => {
                                                                 </ul>
                                                         </div>:<LoginPopup/>
                                                                 }
-                                                                
+
 
                                                                 {/* <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li> */}
 
@@ -71,6 +68,7 @@ const Navbar = () => {
                         </div>
 
                 </div >
+
         );
 };
 

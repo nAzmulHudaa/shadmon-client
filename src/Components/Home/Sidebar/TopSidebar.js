@@ -1,4 +1,4 @@
-import { faAmbulance, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons';
+import { faAmbulance, faCar, faMoneyBill, faTshirt, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons';
 import { Fastfood } from '@material-ui/icons';
 import React from 'react';
 import {
@@ -33,54 +33,17 @@ const TopSidebar = ({ category }) => {
 
     return (
         <div>
-            <ProSidebar
-                breakPoint='md'
-            >
-
-                <SidebarContent>
-                    <Menu iconShape="square">
-
-                        <div className="d-flex">
-                            <i class={icon} style={{ marginTop: '12px', marginRight: '10px' ,fontSize:'16px'}} ></i>
-                            {
-                                sub_category_list.length >= 1 ? <div>
-                                    <SubMenu title={name} icon={<FaSun/>} >
-                                        {
-                                             <span className='d-flex'>
-                                                {/* <FontAwesomeIcon style={{ marginRight: '0', marginLeft: '0', marginTop: '10px' }} icon={faAmbulance} /> */}
-                                                <i class={sub_category_list[0].icon}></i>
-                                                <MenuItem>{sub_category_list[0].name}mmmmm</MenuItem>
-                                                {/* <MenuItem>Food Itemmmmmm</MenuItem> */}
-                                            </span>
-                                            
-                                        }
-                                    </SubMenu>
-                                </div> :
-                                    <div className='d-flex'>
-                                        <MenuItem>{name}</MenuItem>
-                                    </div>
-                            }
-
-                        </div>
-                    </Menu>
-
-                </SidebarContent>
-
-            </ProSidebar>
-
+                        {
+                            sub_category_list.length >= 1 ? <SubMenu title={name}>
+                                <span className="d-flex sub_menu_item">
+                                    <FontAwesomeIcon icon={faCar} style={{ fontSize: '16px' }} className='sub_menu_icon' />
+                                    <MenuItem >{sub_category_list[0].name}</MenuItem>
+                                </span>
+                            </SubMenu> :
+                                <MenuItem className='sub_menu'>{name}</MenuItem>
+                        }
+                        
         </div>
-        // <div>
-        //     <ProSidebar
-        //     breakPoint='md'
-        //     >
-        //         <SidebarContent>
-        //             <Menu iconShape="square">
-
-        //             </Menu>
-        //         </SidebarContent>
-
-        //     </ProSidebar>
-        // </div>
     );
 };
 

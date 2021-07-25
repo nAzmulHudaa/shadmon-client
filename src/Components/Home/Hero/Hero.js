@@ -7,6 +7,8 @@ import Sidebar from '../Sidebar/Sidebar';
 import Sorting from '../Sidebar/Sorting';
 
 
+
+
 const Hero = () => {
     const [readMore, setReadMore] = useState(false);
     const info = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deleniti quibusdam possimus, voluptatum minima commodi dolore excepturi, veniam et facere culpa natus impedit placeat sed sit. Libero debitis nesciunt quasi.'
@@ -14,22 +16,22 @@ const Hero = () => {
         <div className='font hero-section'>
             
             <div className="d-flex  justify-content-center">
-              
+            
                 <Sidebar/>
                 <div className="w-75 row justify-content-center">
-                    <div className="hero-content">
+                    <div className="hero-content ">
                         <div className="hero-icons">
-                            <div className="col-md-8 justify-content-center m-auto">
+                            <div className="col-md-7 justify-content-center m-auto">
                                 <div className="hero-icons d-flex mt-md-1" style={{ cursor: 'pointer' }}>
                                     <div className="d-flex ps-md-3 ps-0 pt-2 pe-md-5 pe-0 " style={{ borderRight: '1px solid #6C757D' }}>
                                         <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: "#6C757D", fontSize: '20px' }} className='me-md-2 me-2 mt-1' />
-                                        <h5 style={{ color: '#6C757D' }} className="ms-md-1">Location</h5>
+                                        <h5 style={{ color: '#6C757D' }} className="ms-md-0">Location</h5>
                                     </div>
-                                    <div className="d-flex ps-md-3 ms-md-4 ms-0 ps-0 pt-2 pe-md-5 pe-0 " style={{ borderRight: '1px solid #6C757D' }}>
+                                    <div className="d-flex ps-md-4 ms-md-4 ms-0 ps-0 pt-2 pe-md-5  pe-0 " style={{ borderRight: '1px solid #6C757D' }}>
                                         <FontAwesomeIcon icon={faBookmark} style={{ color: "#6C757D", fontSize: '20px' }} className='me-md-2 me-md-2 mt-1' />
                                         <h5 style={{ color: '#6C757D' }} className="ms-md-1">Category</h5>
                                     </div>
-                                    <div className="d-flex ps-md-4 ps-0 pt-2 pe-md-5 pe-0 ms-md-2 ms-0 " >
+                                    <div className="d-flex ps-md-5 ps-0 pt-2 pe-md-5 pe-0 ms-md-2 ms-0 " >
                                         <h5 style={{ color: '#6C757D' }} className="ms-md-1">Search</h5>
                                         <FontAwesomeIcon icon={faSearchLocation} style={{ color: "#6C757D", fontSize: '20px' }} className='ms-md-3 ms-2 mt-1' />
                                     </div>

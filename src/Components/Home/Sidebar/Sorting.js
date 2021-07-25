@@ -20,37 +20,21 @@ const Sorting = () => {
 
             {/* collapsed props to change menu size using menucollapse state */}
             <ProSidebar
-
                 breakPoint="md"
-                
-
-
-            >
-                <SidebarHeader>
-
-                    <div className="closemenu" >
-                        {/* changing menu collapse icon on click */}
-                        {/* {menuCollapse ? (
-                        <FiArrowRightCircle />
-                    ) : (
-                        <FiArrowLeftCircle />
-                    )} */}
-
-                    </div>
-                </SidebarHeader>
+              >
                 <SidebarContent>
                     <Menu iconShape="square">
-                        <SubMenu title="Sorting" open='true'  >
-                            <span className="d-flex" >
-                                <FontAwesomeIcon icon={faCar} style={{fontSize:'16px'}} className='mt-2'/>
+                        <SubMenu title="Sorting" className='sub_menu' >
+                            <span className="d-flex sub_menu_item" >
+                                <FontAwesomeIcon icon={faCar} style={{fontSize:'14px'}} className='sub_menu_icon'/>
                                 <MenuItem >Urgent</MenuItem>
                             </span>
-                            <span className="d-flex">
-                                <FontAwesomeIcon icon={faMoneyBill}style={{fontSize:'16px'}} className='mt-2'/>
+                            <span className="d-flex sub_menu_item">
+                                <FontAwesomeIcon icon={faMoneyBill}style={{fontSize:'12px'}} className='sub_menu_icon'/>
                                 <MenuItem>Cheap Rate</MenuItem>
                             </span>
-                            <span className="d-flex">
-                                <FontAwesomeIcon icon={faTshirt}style={{fontSize:'16px'}} className='mt-2'/>
+                            <span className="d-flex sub_menu_item">
+                                <FontAwesomeIcon icon={faTshirt}style={{fontSize:'12px'}} className='sub_menu_icon'/>
                                 <MenuItem>Online Delivery</MenuItem>
                             </span>
 
