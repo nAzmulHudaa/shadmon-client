@@ -97,7 +97,7 @@ export default function LoginPopup() {
       email:data.email,
       password:data.password
     }
-    fetch('http://admin.atikshakil.info/api/login',{
+    fetch('https://admin.atikshakil.info/api/login',{
       method:'POST',
       headers:{
         'content-type':'application/json'
@@ -119,7 +119,7 @@ export default function LoginPopup() {
       password_confirmation:data.confirm
     }
     //console.log(registrationCredintials)
-    fetch('http://admin.atikshakil.info/api/register', {
+    fetch('https://admin.atikshakil.info/api/register', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
