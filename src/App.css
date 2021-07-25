@@ -2,3 +2,11 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*  */
+.btnColor {
+  background-color: #149777;
+  border: 1px solid #149777;
+}
+.btnColor:hover {
+  background-color: #22a584;
+  border: 1px solid #149777;
+}
