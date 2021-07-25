@@ -10,3 +10,7 @@
   background-color: #22a584;
   border: 1px solid #149777;
 }
+.outLined {
+  border: none !important;
+}
+

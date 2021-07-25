@@ -36,6 +36,7 @@ const Navbar = () => {
                                                         <li><button className=''>Offers</button></li>
                                                         <li><button className=''>Bid</button></li>
                                                         
+                                                        
                                                 </ul>
                                         </div>
                                         <div className="nav-items nav-end ms-4">
@@ -48,6 +49,16 @@ const Navbar = () => {
                                                                 <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
                                                                 <LoginPopup />
                                                                 <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
+                                                                {/* <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li> */}
+                                                                <div class="dropdown">
+                                                        <button class="btn btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <FontAwesomeIcon icon={faUserAlt} className='navbar-icon' />
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="/">Go to your profile</a></li>
+                                                        <li><a class="dropdown-item" href="/">Log out</a></li>
+                                                        </ul>
+                                                        </div>
                                                         </div>
                                                 </ul>
                                         </div>
