@@ -34,7 +34,7 @@ leftGrid: {
 }
 }));
 
-export default function TransitionsModal() {
+export default function TransitionsModal({props}) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
