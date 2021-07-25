@@ -77,9 +77,9 @@ export default function SignUpModal() {
                     <Typography
                     variant="h6"
                     >
-                        Welcome to Shadmon !
+                        Sign up to Shadmon !
                     </Typography>
-                    <Typography>Login to manage your account.</Typography>
+                    <Typography>The largest marketplace in Bangladesh</Typography>
 
                         <div className="mt-4">
                             <div className="d-flex mt-5">
@@ -123,7 +123,9 @@ export default function SignUpModal() {
                 <label htmlFor="">Confirm Password</label>
                 <input type="password" className="form-control" />
                 <br />
-                <button className="btn btn-success">Submit</button>
+                <div class="d-grid gap-2 col-12 mx-auto ">
+                  <button class="btn btn-primary btnColor" type="button">Sign up</button>
+                </div>
                 <div className="mt-5 text-center">
                     <Typography>Already Have an Account?</Typography>
                     <SignUpModal />

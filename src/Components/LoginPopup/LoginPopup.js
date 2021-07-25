@@ -56,9 +56,6 @@ export default function LoginPopup() {
 
   return (
     <div>
-      {/* <button type="button" onClick={handleOpen}>
-        Login
-      </button> */}
       <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -114,15 +111,14 @@ export default function LoginPopup() {
                     <div className="text-center">
                         <div className="mt-5">
                         
-                        <Button
-                        variant="outlined"
-                        >Log in with Google.</Button>
+                        <div class="d-grid gap-2 col-12 mx-auto ms-3">
+                          <button class="btn btn-outline-dark" type="button">Log in with Google</button>
+                        </div>
                         </div>
                         <div className="mt-3">
-                        <Button
-                        variant="contained"
-                        color="primary"
-                        >Log in with Facebook.</Button>
+                        <div class="d-grid gap-2 col-12 mx-auto ms-3">
+                          <button class="btn btn-primary "  type="button">Log in with Facebook</button>
+                        </div>
                         </div>
                         <div className="mt-3 mb-5">
                         
