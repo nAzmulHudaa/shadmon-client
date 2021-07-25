@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import UserPage from './Components/Home/UserPage/UserPage';
 import Navbar from './Components/Home/Navbar/Navbar';
-
+import LoginBar from './Components/TestBar/LoginBar/LoginBar'
 
 export const UserContext = createContext();
 
@@ -43,6 +43,9 @@ function App() {
           <Route path='/user'>
             <Navbar/>
             <UserPage/>
+          </Route>
+          <Route path="/loginbar">
+            <LoginBar />
           </Route>
           <Route path='/'>
             <Home/>
