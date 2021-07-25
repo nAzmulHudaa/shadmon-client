@@ -120,7 +120,7 @@ export default function TransitionsModal() {
                 </div>
                 <div className="mt-5 text-center">
                     <Typography>Don't have an account yet?</Typography>
-                    <SignUpModal />
+                    <SignUpModal onClose={handleClose} />
                 </div>
             </form>
                 </Grid>
