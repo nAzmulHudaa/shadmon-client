@@ -118,7 +118,20 @@ export default function LoginPopup() {
       password:data.password,
       password_confirmation:data.confirm
     }
-    console.log(registrationCredintials)
+    //console.log(registrationCredintials)
+    fetch('http://admin.atikshakil.info/api/register', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(registrationCredintials)
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        window.alert('Registration Successful. Please Login')
+        window.location.assign('/')
+      })
   }
   return (
     <div>
@@ -265,10 +278,10 @@ export default function LoginPopup() {
                   <form onSubmit={handleSubmit(onSubmit)} className="ms-4">
 
                     <label htmlFor="">Email</label>
-                    <input type="text" className="form-control"  {...register("email")} name='email' />
+                    <input type="text" className="form-control" required {...register("email")} name='email' />
                     <br />
                     <label htmlFor="">Password</label>
-                    <input type="password" className="form-control"  {...register("password")} name='password' />
+                    <input type="password" className="form-control" required  {...register("password")} name='password' />
                     <br />
                     <div class="d-grid gap-2 col-12 mx-auto">
                       <input type="submit" className='btn btn-primary' />
