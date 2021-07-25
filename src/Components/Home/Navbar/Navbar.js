@@ -48,12 +48,12 @@ const Navbar = () => {
                                                                 <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
                                                                 {
                                                                 loggedInUser.email?                                                                <div class="dropdown" style={{position:'relative',bottom:'3px'}}>
-                                                                <button class="btn btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <button class="btn ms-2 btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                                         <FontAwesomeIcon icon={faUserAlt} className='navbar-icon' />
                                                                 </button>
                                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                                        <li><a class="dropdown-item" href="/user">Go to your profile</a></li>
-                                                                        <li><a class="dropdown-item" href="/">Log out</a></li>
+                                                                        <li><a class="dropdown-item mt-1 mb-2" href="/user"> profile</a></li>
+                                                                        <li><a class="dropdown-item mt-2" href="/">Log out</a></li>
                                                                 </ul>
                                                         </div>:<LoginPopup/>
                                                                 }

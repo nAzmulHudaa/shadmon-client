@@ -7,6 +7,8 @@ import { Button, Grid, Typography } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchDollar, faTag, faTags, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import CancelIcon from '@material-ui/icons/Cancel';
+import { useForm } from "react-hook-form";
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -40,6 +42,17 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function LoginPopup() {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const {
+    register: register2,
+    formState: { errors: errors2 },
+    handleSubmit: handleSubmit2,  } = useForm();
+
 
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -73,7 +86,40 @@ export default function LoginPopup() {
   }
 
 
-
+  const handleGoogle = ()=>{
+    window.location.assign('http://admin.atikshakil.info/social/login/google')
+  }
+  const handleFacebook =()=>{
+    window.location.assign('http://admin.atikshakil.info/social/login/facebook')
+  }
+  const onSubmit = data =>{
+    const loginCredentials = {
+      email:data.email,
+      password:data.password
+    }
+    fetch('http://admin.atikshakil.info/api/login',{
+      method:'POST',
+      headers:{
+        'content-type':'application/json'
+      },
+      body:JSON.stringify(loginCredentials)
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data.token)
+      sessionStorage.setItem('token',data.token)
+      window.location.assign('/user')
+    })
+  }
+  const onRegister = data =>{
+    const registrationCredintials = {
+      name:data.name,
+      email:data.email,
+      password:data.password,
+      password_confirmation:data.confirm
+    }
+    console.log(registrationCredintials)
+  }
   return (
     <div>
       <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li>
@@ -132,12 +178,12 @@ export default function LoginPopup() {
                   <div className="mt-5">
 
                     <div class="d-grid gap-2 col-12 mx-auto ms-3">
-                      <button class="btn btn-outline-dark" type="button">Log in with Google</button>
+                      <button class="btn btn-outline-dark" type="button" onClick={handleGoogle}>Log in with Google</button>
                     </div>
                   </div>
                   <div className="mt-3">
                     <div class="d-grid gap-2 col-12 mx-auto ms-3">
-                      <button class="btn btn-primary " type="button">Log in with Facebook</button>
+                      <button class="btn btn-primary " type="button" onClick={handleFacebook}>Log in with Facebook</button>
                     </div>
                   </div>
                   <div className="mt-3 mb-5">
@@ -216,16 +262,16 @@ export default function LoginPopup() {
                 <Grid item lg={6}>
                   <CancelIcon className={classes.cancelBtn} onClick={handleCloseMail} />
 
-                  <form action="" className="ms-4">
+                  <form onSubmit={handleSubmit(onSubmit)} className="ms-4">
 
                     <label htmlFor="">Email</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control"  {...register("email")} name='email' />
                     <br />
                     <label htmlFor="">Password</label>
-                    <input type="password" className="form-control" />
+                    <input type="password" className="form-control"  {...register("password")} name='password' />
                     <br />
                     <div class="d-grid gap-2 col-12 mx-auto">
-                      <button class="btn btn-primary btnColor" type="button">Login</button>
+                      <input type="submit" className='btn btn-primary' />
                     </div>
                     <br />
                     <div className="text-center">
@@ -304,18 +350,18 @@ export default function LoginPopup() {
 
                 <Grid item lg={6}>
 
-                  <form className="ms-4">
+                  <form className="ms-4" onSubmit={handleSubmit2(onRegister)}>
                     <label htmlFor="">Name</label>
-                    <input type="text" className="form-control" name='name' id='name' />
+                    <input type="text" className="form-control" {...register2("name")} name='name' />
                     <br />
                     <label htmlFor="">Email</label>
-                    <input type="text" className="form-control" name='email' id='email' />
+                    <input type="text" className="form-control"  {...register2("email")} name='email' />
                     <br />
                     <label htmlFor="">Password</label>
-                    <input type="password" className="form-control" name='password' id='password' />
+                    <input type="password" className="form-control" {...register2("password")} name='password' />
                     <br />
                     <label htmlFor="">Confirm Password</label>
-                    <input type="password" className="form-control" name='password_confirmation' id='confirm' />
+                    <input type="password" className="form-control" name='password_confirmation'  {...register2("confirm")} />
                     <br />
                     <input type="submit" className='btn btn-primary btnColor' />
                     <div class Name="mt-5 text-center">

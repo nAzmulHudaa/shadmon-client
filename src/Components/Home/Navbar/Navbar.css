@@ -26,6 +26,13 @@
     background-color: #6C757D;
     color: white;
 }
+.dropdown-menu li{
+    background: none;
+}
+.dropdown-menu li:hover{
+    background: white;
+    color: black;
+}
 .logo{
     color: #586067;
     font-size: 35px;
