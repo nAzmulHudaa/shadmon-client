@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className='font nav-bar'>
                         <nav class="navbar container-custom m-auto navbar-expand-lg navbar-light ">
                                 <a class="navbar-brand text-info font-weight-bolder" href="/">
-                                        <a href="/" className='logo'>Shadman</a>
+                                        <a href="/" className='logo'>shadaman</a>
                                         {/* <img src={} alt="" className='w-100' /> */}
                                 </a>
                                 <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>

@@ -35,11 +35,11 @@ const Hero = () => {
                                     </div>
                                     <div className="d-flex  ">
                                         {/* <FontAwesomeIcon icon={faBookmark} style={{ color: "#6C757D", fontSize: '20px' }} className='ms-md-4' /> */}
-                                        <b style={{ color: '#6C757D' }} className="ps-md-4 pe-md-4">Category</b>
+                                        <b style={{ color: '#6C757D' }} className="ps-md-5 pe-md-5">Category</b>
                                         <div className="divider"></div>
                                     </div>
                                     <div className="d-flex " >
-                                        <b style={{ color: '#6C757D' }} className="ps-md-4 pe-md-0">Search</b>
+                                        <b style={{ color: '#6C757D' }} className="ps-md-5 pe-md-0">Search</b>
                                         <FontAwesomeIcon icon={faSearchLocation} style={{ color: "#6C757D", fontSize: '20px' }} className='mt-1 ms-md-2' />
 
                                     </div>
@@ -56,34 +56,36 @@ const Hero = () => {
                                     <img src={hero} alt="apartment" className=' rounded-top' />
                                 </div>
                                 <div className="hero-content mt-md-2 mb-md-2">
-                                    <div className="d-flex">
-                                        <div className='me-md-2'>
-                                            <img className='author_logo' src="https://cdn.freelogovectors.net/wp-content/uploads/2021/04/xiaomi-logo-freelogovectors.net_.png" alt="" />
-                                        </div>
-                                        <div className='pd-details'>
-                                            <h5 style={{ fontSize: '23px' }}>2 BHK Residential Apartment in Chandivali</h5>
-                                            <div className="hero-mid d-flex">
-                                                <div className="first d-flex">
-                                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2' />
-                                                    <p style={{ color: '#6C757D' }}>Chittagong</p>
-                                                </div>
-                                                <div className="second d-flex">
-                                                    <FontAwesomeIcon icon={faBookmark} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2 ms-md-2 ms-0' />
-                                                    <p style={{ color: '#6C757D' }}>Residential</p>
-                                                </div>
+                                    <div className="hero-info">
+                                        <div className="d-flex">
+                                            <div className='me-md-2'>
+                                                <img className='author_logo' src="https://cdn.freelogovectors.net/wp-content/uploads/2021/04/xiaomi-logo-freelogovectors.net_.png" alt="" />
                                             </div>
-                                            <div className="price">
-                                                <h5 >$2,500 Cr</h5>
-                                            </div>
-                                            <div className="last d-flex justify-content-between">
-                                                <p style={{ marginBottom: "0px", color: '#6C757D' }}>Miami Trading, 14 people connected</p>
-                                                <p style={{ marginBottom: "0px" }}>{readMore ? info : `${info.substring(0, 0)}`}
+                                            <div className='pd-details'>
+                                                <h5 style={{ fontSize: '23px' }}>2 BHK Residential Apartment in Chandivali</h5>
+                                                <div className="hero-mid d-flex">
+                                                    <div className="first d-flex">
+                                                        <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2' />
+                                                        <p style={{ color: '#6C757D' }}>Chittagong</p>
+                                                    </div>
+                                                    <div className="second d-flex">
+                                                        <FontAwesomeIcon icon={faBookmark} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2 ms-md-2 ms-0' />
+                                                        <p style={{ color: '#6C757D' }}>Residential</p>
+                                                    </div>
+                                                </div>
+                                                <div className="price">
+                                                    <h5 >$2,500 Cr</h5>
+                                                </div>
+                                                <div className="last d-flex justify-content-between">
+                                                    <p style={{ marginBottom: "0px", color: '#6C757D' }}>Miami Trading, 14 people connected</p>
+                                                    <p style={{ marginBottom: "0px" }}>{readMore ? info : `${info.substring(0, 0)}`}
 
-                                                    <p className='details' onClick={() => setReadMore(!readMore)}>
-                                                        {readMore ? 'Show less' : `Read More`}
+                                                        <p className='details' onClick={() => setReadMore(!readMore)}>
+                                                            {readMore ? 'Show less' : `Read More`}
+                                                        </p>
+
                                                     </p>
-
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +94,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <HeroAdd/>
+                <HeroAdd />
             </div>
         </div>
 

@@ -34,7 +34,7 @@ const TopSidebar = ({ category }) => {
     return (
         <div>
             <div className="d-flex">
-                <i class='far fa-address-book' style={{ marginTop: '14px', fontSize: '13px' }}></i>
+                <i class='far fa-address-book' style={{ marginTop: '8px', fontSize: '13px' }}></i>
                 {
                     sub_category_list.length >= 1 ? <SubMenu title={name} className='sub_menu'>
                         <span className="d-flex sub_menu_item">

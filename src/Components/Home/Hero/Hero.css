@@ -1,14 +1,16 @@
 .hero-box{
     position: relative;
-    margin-top: 15px;
+    margin-top: 10px;
     border-radius: 10px;
     background: #f9ccb040;
+    
 }
 .hero-img img{
-    width: 510px;
-    height: 300px;
+    width: 515px;
+    height: 280px;
 }
-.hero-content{
+.hero-info{
+padding: 0 10px;
   
 }
 /* .details{
@@ -37,9 +39,12 @@
     width: 160px;
 }
 .add-box img{
-    width: 140px;
+    width: 160px;
     margin-top: 30px;
     margin-left: 0px;
+}
+.pd-details{
+    margin-bottom: 0px;
 }
 
 
@@ -56,4 +61,13 @@
 .details{
 
     cursor: pointer;
+}
+.hero-mid{
+    margin-top: -6px;
+}
+.price{
+    margin-top: -10px;
+}
+.last{
+    margin-top: -5px;
 }
