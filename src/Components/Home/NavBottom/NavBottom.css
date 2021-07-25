@@ -1,11 +1,17 @@
 .navBottomContainer {
     border-bottom: 1px solid lightgray;
-    margin-top: 10px;
+    height: 35px;
+    padding-top: 3px;
+    
 }
 .navItem p {
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     cursor: pointer;
 }
 .selected {
-    border-bottom: 5px solid rgb(67, 108, 241);
+    border-bottom: 2px solid rgb(67, 108, 241);
+}
+.navItem p:hover {
+    border-bottom: 2px solid rgb(67, 108, 241);
 }
