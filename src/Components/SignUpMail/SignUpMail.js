@@ -34,7 +34,7 @@ leftGrid: {
 }
 }));
 
-export default function TransitionsModal({props}) {
+export default function TransitionsModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -120,7 +120,7 @@ export default function TransitionsModal({props}) {
                 </div>
                 <div className="mt-5 text-center">
                     <Typography>Don't have an account yet?</Typography>
-                    <SignUpModal onClose={handleClose} />
+                    <SignUpModal onClick={handleClose} />
                 </div>
             </form>
                 </Grid>

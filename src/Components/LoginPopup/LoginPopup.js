@@ -48,7 +48,7 @@ export default function LoginPopup() {
     setOpen(true);
   };
 
-  const handleLoginClose = () => {
+  const handleClose = () => {
     setOpen(false);
   };
 
@@ -62,7 +62,7 @@ export default function LoginPopup() {
         aria-describedby="transition-modal-description"
         className={classes.modal}
         open={open}
-        onClose={handleLoginClose}
+        onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
@@ -107,7 +107,7 @@ export default function LoginPopup() {
                 {/* Login Grid */}
                 
                 <Grid item lg={6}>
-                    <CancelIcon className={classes.cancelBtn} onClick={handleLoginClose}/>
+                    <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
                     <div className="text-center">
                         <div className="mt-5">
                         
@@ -122,7 +122,7 @@ export default function LoginPopup() {
                         </div>
                         <div className="mt-3 mb-5">
                         
-                        <SignUpMail handleLoginClose={handleLoginClose}/>
+                        <SignUpMail />
                         </div>
 
                         <div>
