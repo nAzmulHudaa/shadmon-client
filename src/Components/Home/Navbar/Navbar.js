@@ -51,7 +51,7 @@ const Navbar = () => {
                                                                 <li><FontAwesomeIcon icon={faCaretDown} className='navbar-icon' /></li>
                                                                 {/* <li><FontAwesomeIcon icon={faUserAlt} onClick={handleOpen} className='navbar-icon' /></li> */}
                                                                 <div class="dropdown">
-                                                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <button class="btn btn-light outLined dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                         <FontAwesomeIcon icon={faUserAlt} className='navbar-icon' />
                                                         </button>
                                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
