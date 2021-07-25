@@ -51,7 +51,7 @@
     /* border-radius: 50%; */
     font-size: 23px;
     padding: 4px 0px;
-    /* margin-top: 5px; */
+    margin-top: 5px;
     cursor: pointer;
     
 }
@@ -80,7 +80,7 @@
 }
 .nav-mid{
     position: relative;
-    right: 198px;
+    right: 173px;
 }
 .nav-desktop{
     display: flex;

@@ -20,20 +20,19 @@ const Sorting = () => {
 
             {/* collapsed props to change menu size using menucollapse state */}
             <ProSidebar
-                breakPoint="md"
               >
                 <SidebarContent>
                     <Menu iconShape="square">
-                        <SubMenu title="Sorting" className='sub_menu' >
-                            <span className="d-flex sub_menu_item" >
+                        <SubMenu title="Sorting" className='sub_menu sub_custom' >
+                            <span className="d-flex  " >
                                 <FontAwesomeIcon icon={faCar} style={{fontSize:'14px'}} className='sub_menu_icon'/>
                                 <MenuItem >Urgent</MenuItem>
                             </span>
-                            <span className="d-flex sub_menu_item">
+                            <span className="d-flex  ">
                                 <FontAwesomeIcon icon={faMoneyBill}style={{fontSize:'12px'}} className='sub_menu_icon'/>
                                 <MenuItem>Cheap Rate</MenuItem>
                             </span>
-                            <span className="d-flex sub_menu_item">
+                            <span className="d-flex ">
                                 <FontAwesomeIcon icon={faTshirt}style={{fontSize:'12px'}} className='sub_menu_icon'/>
                                 <MenuItem>Online Delivery</MenuItem>
                             </span>

@@ -33,16 +33,19 @@ const TopSidebar = ({ category }) => {
 
     return (
         <div>
-                        {
-                            sub_category_list.length >= 1 ? <SubMenu title={name}>
-                                <span className="d-flex sub_menu_item">
-                                    <FontAwesomeIcon icon={faCar} style={{ fontSize: '16px' }} className='sub_menu_icon' />
-                                    <MenuItem >{sub_category_list[0].name}</MenuItem>
-                                </span>
-                            </SubMenu> :
-                                <MenuItem className='sub_menu'>{name}</MenuItem>
-                        }
-                        
+            <div className="d-flex">
+                <i class='far fa-address-book' style={{ marginTop: '14px', fontSize: '13px' }}></i>
+                {
+                    sub_category_list.length >= 1 ? <SubMenu title={name} className='sub_menu'>
+                        <span className="d-flex sub_menu_item">
+                            <FontAwesomeIcon icon={faCar} style={{ fontSize: '16px' }} className='sub_menu_icon' />
+                            <MenuItem >{sub_category_list[0].name}</MenuItem>
+                        </span>
+                    </SubMenu> :
+                            <MenuItem className='sub_menu'>{name}</MenuItem>
+                }     
+            </div>
+           
         </div>
     );
 };
