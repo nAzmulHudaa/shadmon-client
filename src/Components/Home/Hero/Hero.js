@@ -13,9 +13,9 @@ const Hero = () => {
     const [readMore, setReadMore] = useState(false);
     const info = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero sed quidem aut dolor voluptates eaque pariatur, distinctio similique sunt, quis suscipit consectetur quia, temporibus accusamus exercitationem enim minima impedit!'
     return (
-        <div className='font hero-section'>
+        <div className='font hero-section container-custom m-auto'>
             <div className="d-flex">
-                <div className="w-25">
+                <div className="">
                     <Sidebar />
                 </div>
                 <div className="hero-container">
@@ -25,17 +25,17 @@ const Hero = () => {
                                 <div className="hero-icons d-flex mt-md-1" style={{ cursor: 'pointer' }}>
                                     <div className="d-flex " >
 
-                                        <b style={{ color: '#6C757D' }} className="pe-md-5">All Adds</b>
+                                        <b style={{ color: '#6C757D' }} className="pe-md-4">All Adds</b>
                                         <div className="divider"></div>
                                     </div>
                                     <div className="d-flex  ">
                                         {/* <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: "#6C757D", fontSize: '20px' }} className='ms-md-3' /> */}
-                                        <b style={{ color: '#6C757D' }} className="ps-md-5 pe-md-5">Location</b>
+                                        <b style={{ color: '#6C757D' }} className="ps-md-4 pe-md-4">Location</b>
                                         <div className="divider"></div>
                                     </div>
                                     <div className="d-flex  ">
                                         {/* <FontAwesomeIcon icon={faBookmark} style={{ color: "#6C757D", fontSize: '20px' }} className='ms-md-4' /> */}
-                                        <b style={{ color: '#6C757D' }} className="ps-md-5 pe-md-5">Category</b>
+                                        <b style={{ color: '#6C757D' }} className="ps-md-4 pe-md-4">Category</b>
                                         <div className="divider"></div>
                                     </div>
                                     <div className="d-flex " >

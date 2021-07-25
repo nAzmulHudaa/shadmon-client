@@ -5,10 +5,11 @@
     background: #f9ccb040;
 }
 .hero-img img{
-    width: 543px;
+    width: 510px;
+    height: 300px;
 }
 .hero-content{
-    padding: 10px 15px;
+  
 }
 /* .details{
     margin-top: 15px;
@@ -43,16 +44,16 @@
 
 
 .hero-container{
-    width:575px;
-    margin-left: 10px;
+    width:515px;
+  
 }
 .divider{
     border: 1px solid #6C757D;
-    height: 17px;
-    margin-top: 4px;
+    height: 14px;
+    margin-top: 6px;
 }
 
 .details{
-    margin-left: 20px;
+
     cursor: pointer;
 }

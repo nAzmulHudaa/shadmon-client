@@ -11,6 +11,7 @@ import {
 import UserPage from './Components/Home/UserPage/UserPage';
 import Navbar from './Components/Home/Navbar/Navbar';
 import LoginBar from './Components/TestBar/LoginBar/LoginBar'
+import NavBottom from './Components/Home/NavBottom/NavBottom';
 
 export const UserContext = createContext();
 
@@ -42,6 +43,7 @@ function App() {
         <Switch>
           <Route path='/user'>
             <Navbar/>
+            <NavBottom/>
             <UserPage/>
           </Route>
           <Route path="/loginbar">
