@@ -40,7 +40,7 @@ const Sidebar = () => {
                 categories.map(category => <TopSidebar category={category} key={category.id}></TopSidebar>)
               }
             </SubMenu>
-            <SubMenu title="Location" className='sub_menu' >
+            <SubMenu title="Location" className='sub_menu' open='true' >
               <span className="d-flex " >
                 <FontAwesomeIcon icon={faCar} style={{ fontSize: '14px' }} className='sub_menu_icon' />
                 <MenuItem >Urgent</MenuItem>

@@ -62,7 +62,7 @@
     padding: 0;
 }
 .pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item {
-    padding: 8px 43px 8px 15px;
+    padding: 8px 43px 0px 15px;
     
 }
 .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item{
