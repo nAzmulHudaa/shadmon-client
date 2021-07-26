@@ -17,3 +17,31 @@
 .product-info p{
     margin-bottom: 0px;
 }
+.another-product-info{
+    padding-right: 11px;
+    padding-left: 7px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.pd-last-1{
+    background-color:#267bf9;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+.pd-last-2{
+    background-color:#267bf9;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+.pd-last-3{
+    background-color:#267bf9;
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: white;
+
+}
+.pd-last h5{
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+}

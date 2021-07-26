@@ -1,12 +1,12 @@
-import { faBookmark, faMapMarkerAlt, faSearchLocation } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React from 'react';
 import './Hero.css'
 import Sidebar from '../Sidebar/Sidebar';
 import HeroAdd from './HeroAdd';
 import HeroTop from './HeroTop';
 import HeroNav from './HeroNav';
 import Products from '../Products/Products';
+import Promotion from '../Promotion/Promotion';
+import AnotherPd from '../Products/AnotherPd';
 
 const Hero = () => {
     return (
@@ -20,6 +20,8 @@ const Hero = () => {
                         <HeroNav />
                         <HeroTop />
                         <Products/>
+                        <Promotion/>
+                        <AnotherPd/>
                     </div>
                 </div>
                 <HeroAdd />
