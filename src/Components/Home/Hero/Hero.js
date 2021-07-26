@@ -6,6 +6,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import HeroAdd from './HeroAdd';
 import HeroTop from './HeroTop';
 import HeroNav from './HeroNav';
+import Products from '../Products/Products';
 
 const Hero = () => {
     return (
@@ -18,6 +19,7 @@ const Hero = () => {
                     <div className="hero-content ">
                         <HeroNav />
                         <HeroTop />
+                        <Products/>
                     </div>
                 </div>
                 <HeroAdd />

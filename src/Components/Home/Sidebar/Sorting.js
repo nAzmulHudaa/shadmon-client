@@ -20,6 +20,7 @@ const Sorting = () => {
 
             {/* collapsed props to change menu size using menucollapse state */}
             <ProSidebar
+            breakPoint='md'
               >
                 <SidebarContent>
                     <Menu iconShape="square">

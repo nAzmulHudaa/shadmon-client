@@ -32,7 +32,9 @@ const Sidebar = () => {
 
     <div id="sidebar">
       <Sorting />
-      <ProSidebar>
+      <ProSidebar
+      breakPoint = 'md'
+      >
         <SidebarContent>
           <Menu iconShape='square'>
             <SubMenu title='All Categories' className='sub_menu' open='true' >
