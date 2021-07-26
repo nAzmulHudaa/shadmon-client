@@ -1,0 +1,21 @@
+.place-img img{
+    width: 200px;
+    margin-left: 27px;
+}
+.placeDiv{
+    background-color: #F5F5F5;
+}
+.placeDiv p{
+    margin-bottom: 0;
+}
+.place-info{
+    text-align: right;
+    padding: 25px 15px;
+}
+.place-overlay{
+    background-color: red;
+}
+.place-info h5, .place-info p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

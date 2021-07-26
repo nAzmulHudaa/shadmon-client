@@ -7,6 +7,7 @@ import HeroNav from './HeroNav';
 import Products from '../Products/Products';
 import Promotion from '../Promotion/Promotion';
 import AnotherPd from '../Products/AnotherPd';
+import Place from '../Place/Place';
 
 const Hero = () => {
     return (
@@ -22,6 +23,7 @@ const Hero = () => {
                         <Products/>
                         <Promotion/>
                         <AnotherPd/>
+                        <Place/>
                     </div>
                 </div>
                 <HeroAdd />

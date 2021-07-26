@@ -6,7 +6,7 @@ import product from '../../../images/product.jpg';
 
 const AnotherPd = () => {
     return (
-        <div className="products rounded mt-4 mb-5">
+        <div className="products rounded mt-4 ">
             <div className="d-flex">
                 <div className="pd-img">
                     <img src={product} alt="" className='rounded' />
@@ -38,12 +38,12 @@ const AnotherPd = () => {
                             <FontAwesomeIcon icon={faArrowDown} className='me-1' style={{ marginTop: '2px' }} />
                             <h5>Details</h5>
                         </div>
-
                     </div>
 
                 </div>
             </div>
-        </div>);
+        </div>
+);
 };
 
 export default AnotherPd;
