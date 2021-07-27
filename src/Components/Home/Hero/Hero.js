@@ -8,6 +8,8 @@ import Products from '../Products/Products';
 import Promotion from '../Promotion/Promotion';
 import AnotherPd from '../Products/AnotherPd';
 import Place from '../Place/Place';
+import ProductCarousel from '../ProductCarousel/ProductCarousel';
+import CarouselItem from '../ProductCarousel/CarouselItem';
 
 const Hero = () => {
     return (
@@ -24,6 +26,7 @@ const Hero = () => {
                         <Promotion/>
                         <AnotherPd/>
                         <Place/>
+                        <CarouselItem/>
                     </div>
                 </div>
                 <HeroAdd />
