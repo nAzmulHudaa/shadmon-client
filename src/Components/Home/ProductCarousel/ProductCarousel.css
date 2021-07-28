@@ -76,10 +76,12 @@
 }
 .premium-pd{
     background: #EFE6E4;
-    padding-left: 20px;
-    padding-top: 7px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+}
+.premium-pd img{
+    padding-bottom: 100px;
+    width: 240px;
 }
 
 .carousel-img {
@@ -88,25 +90,40 @@
     height: 240px;
 }
 .overlay-card{
-    background: #dac6c3;
+    background: #f9ce81;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    width: 320px;
-    margin: auto;
+    width: 215px;
     border-radius: 20px;
+    color: #3a476d;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    margin-left: 10px;
 }
 .overlay-card p{
     margin-bottom: 0;
 }
 .overlay-card h5{
+margin: 0;
+padding: 0;
+}
+.featured{
+    background: #da1eab;
+    padding:10px;
+    width: 100px;
+    height: 25px;
     margin: 0;
     padding: 0;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    top: 8px;
+    color: white;
 }
-
-@media (hover: none) and (pointer: coarse) {
-    .left-arrow, .right-arrow {
-        display: none;
-    }
+.featured p{
+    margin: 0;
+    padding: 0;
 }

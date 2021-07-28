@@ -5,9 +5,32 @@ import building1 from '../../../images/building2.jpg'
 import building2 from '../../../images/building3.jpg'
 import building3 from '../../../images/building4.jpg'
 import './ProductCarousel.css'
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.css';
+import 'primeflex/primeflex.css';
 
+import { Carousel } from 'primereact/carousel';
+import { Button } from 'primereact/button';
 
 const CarouselItem = () => {
+    const responsiveOptions = [
+        {
+            breakpoint: '1024px',
+            numVisible: 3,
+            numScroll: 3
+        },
+        {
+            breakpoint: '600px',
+            numVisible: 2,
+            numScroll: 2
+        },
+        {
+            breakpoint: '480px',
+            numVisible: 1,
+            numScroll: 1
+        }
+    ];
+
     return (
 
         <div className="premium-pd rounded mb-5">
@@ -15,7 +38,7 @@ const CarouselItem = () => {
             <div style={{ marginLeft: 'auto', marginRight: 'auto' }} className='premium-carousel' >
                 <ProductCarousel
                     show={true}
-                    
+
                 >
                     <div className='carousel-div'>
                         <div style={{ padding: '5px' }} className='carousel-img '>
@@ -66,7 +89,9 @@ const CarouselItem = () => {
                 </ProductCarousel>
             </div>
         </div>
+        
     );
 };
 
 export default CarouselItem;
+
