@@ -1,3 +1,5 @@
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Carousel from 'react-grid-carousel'
 import tshirt from '../../../images/t-shirt.jpg'
@@ -9,49 +11,87 @@ import './ProductCarousel.css'
 const ElectronicPdCarousel = () => {
     return (
         <div>
-            <div className=" electric-product-slider rounded  mb-5">
-               
+            <div className=" electric-product-slider pt-3 pb-2 rounded text-secondary mb-5" style={{backgroundColor:'#F5F5F5'}}>
+                <div className="d-flex justify-content-lg-between">
+                    <div>
+                        <h5 className='text-dark ms-3'>Electric & Electronics</h5>
+                    </div>
+                    <div>
+                        <p className='m-0'>All Categories</p>
+                    </div>
+                    <div className='me-3'>
+                        <p className='m-0'>
+                            This Cateogory
+                        </p>
+                    </div>
+                </div>
                 <Carousel
                     cols={2} rows={1} gap={10} loop
                 >
                     <Carousel.Item>
-                        <div className="featured">
-                            <p className=''>Featured</p>
-                        </div>
+                       
 
-                        <img src={tshirt} className='  rounded' />
-                        <div className="electric-pd-details">
-                            <h5 className='overlay-title'>Land T Cresent Bay</h5>
-                          
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="featured">
-                            <p className=''>Featured</p>
-                        </div>
-                        <img src={watch} className='  rounded' />
-                        <div className="">
-                            <h5 className='overlay-title'>Land T Cresent Bay</h5>
-                         
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="featured">
-                            <p className=''>Featured</p>
-                        </div>
-                        <img src={wallet} className='rounded ' />
-                        <div className="">
-                            <h5 className='overlay-title'>Land T Cresent Bay</h5>
+                        <img src={tshirt} className=' w-100  rounded' />
+                        <div className=''style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
 
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="featured">
-                            <p className=''>Featured</p>
+                       
+                        <img src={wallet} className='w-100  rounded' />
+                        <div className="" style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
                         </div>
-                        <img src={watch} className=' rounded ' />
-                        <div className="">
-                            <h5 className=''>Land T Cresent Bay</h5>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                       
+                        <img src={wallet} className='rounded w-100 ' />
+                        <div className="" style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        
+                        <img src={tshirt} className=' rounded w-100' />
+                        <div className="" style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
                         </div>
                     </Carousel.Item>
 
