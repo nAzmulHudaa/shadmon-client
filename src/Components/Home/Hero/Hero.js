@@ -10,6 +10,7 @@ import AnotherPd from '../Products/AnotherPd';
 import Place from '../Place/Place';
 import CarouselItem from '../ProductCarousel/CarouselItem';
 import Gallery from '../ProductCarousel/Gallery';
+import ElectronicPdCarousel from '../ProductCarousel/ElectronicPdCarousel';
 
 const Hero = () => {
     return (
@@ -27,6 +28,7 @@ const Hero = () => {
                         <AnotherPd/>
                         <Place/>
                         <Gallery/>
+                        <ElectronicPdCarousel/>
                     </div>
                 </div>
                 <HeroAdd />
