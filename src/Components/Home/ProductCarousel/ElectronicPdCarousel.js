@@ -10,8 +10,8 @@ import './ProductCarousel.css'
 
 const ElectronicPdCarousel = () => {
     return (
-        <div>
-            <div className=" electric-product-slider pt-3 pb-2 rounded text-secondary mb-5" style={{backgroundColor:'#F5F5F5'}}>
+        <div >
+            <div className=" electric-product-slider pt-4 pb-4 rounded text-secondary mb-4" style={{backgroundColor:'#F5F5F5'}}>
                 <div className="d-flex justify-content-lg-between">
                     <div>
                         <h5 className='text-dark ms-3'>Electric & Electronics</h5>
@@ -26,14 +26,14 @@ const ElectronicPdCarousel = () => {
                     </div>
                 </div>
                 <Carousel
-                    cols={2} rows={1} gap={10} loop
+                    cols={3} rows={1} gap={10} loop
                 >
                     <Carousel.Item>
                        
 
                         <img src={tshirt} className=' w-100  rounded' />
                         <div className=''style={{borderBottom:'2px solid gray'}}>
-                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
                             <div className="d-flex mb-2 justify-content-lg-between">
                                 <div>
                                     <h5 className='m-0 p-0'>$256</h5>
@@ -50,7 +50,7 @@ const ElectronicPdCarousel = () => {
                        
                         <img src={wallet} className='w-100  rounded' />
                         <div className="" style={{borderBottom:'2px solid gray'}}>
-                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
                             <div className="d-flex mb-2 justify-content-lg-between">
                                 <div>
                                     <h5 className='m-0 p-0'>$256</h5>
@@ -66,7 +66,7 @@ const ElectronicPdCarousel = () => {
                        
                         <img src={wallet} className='rounded w-100 ' />
                         <div className="" style={{borderBottom:'2px solid gray'}}>
-                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
                             <div className="d-flex mb-2 justify-content-lg-between">
                                 <div>
                                     <h5 className='m-0 p-0'>$256</h5>
@@ -82,7 +82,7 @@ const ElectronicPdCarousel = () => {
                         
                         <img src={tshirt} className=' rounded w-100' />
                         <div className="" style={{borderBottom:'2px solid gray'}}>
-                            <h5 className='m-0 p-0'>Land T Cresent Bay</h5>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
                             <div className="d-flex mb-2 justify-content-lg-between">
                                 <div>
                                     <h5 className='m-0 p-0'>$256</h5>
@@ -94,6 +94,40 @@ const ElectronicPdCarousel = () => {
                             </div>
                         </div>
                     </Carousel.Item>
+                    <Carousel.Item>
+                        
+                        <img src={tshirt} className=' rounded w-100' />
+                        <div className="" style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        
+                        <img src={tshirt} className=' rounded w-100' />
+                        <div className="" style={{borderBottom:'2px solid gray'}}>
+                            <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
+                            <div className="d-flex mb-2 justify-content-lg-between">
+                                <div>
+                                    <h5 className='m-0 p-0'>$256</h5>
+                                </div>
+                                <div className='d-flex mt-1'>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} style={{ fontSize: '14px' }} className='mt-1 me-1' />
+                                    <h6>Dhaka</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+
 
                 </Carousel>
             </div>

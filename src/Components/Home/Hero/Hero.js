@@ -11,6 +11,7 @@ import Place from '../Place/Place';
 import CarouselItem from '../ProductCarousel/CarouselItem';
 import Gallery from '../ProductCarousel/Gallery';
 import ElectronicPdCarousel from '../ProductCarousel/ElectronicPdCarousel';
+import Features from '../Features/Features';
 
 const Hero = () => {
     return (
@@ -29,6 +30,7 @@ const Hero = () => {
                         <Place/>
                         <Gallery/>
                         <ElectronicPdCarousel/>
+                        <Features/>
                     </div>
                 </div>
                 <HeroAdd />

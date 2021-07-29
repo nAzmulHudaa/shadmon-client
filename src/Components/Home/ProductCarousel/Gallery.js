@@ -6,22 +6,18 @@ import building2 from '../../../images/building3.jpg'
 import building3 from '../../../images/building4.jpg'
 
 const Gallery = () => {
-  const responsiveNess = [
-    {
-      breakpoint: 360,
-      cols: 2,
-      rows: 1,
-      gap: 10,
-      loop: true,
-      autoplay: 1000
-    }
-  
+  const responsiveLayout = [
+    [
+      { breakpoint: 1000, cols: 3 },
+      { breakpoint: 750, cols: 2, rows: 1, gap: 5 },
+      { breakpoint: 499, autoplay: 2000, loop: true }
+    ]
   ]
   return (
     <div className="product-slider premium-pd rounded  mb-3">
       <h6 className='ms-3' style={{ color: 'gray' }}>Premium Products</h6>
       <Carousel
-        cols={2} rows={1} gap={10} loop responsiveLayout={responsiveNess}
+        cols={2} rows={1} gap={10} loop responsiveLayout ={responsiveLayout}
       >
         <Carousel.Item>
           <div className="featured">
