@@ -11,8 +11,8 @@ const Home = () => {
             <Navbar/>
             <NavBottom />
             <Hero/>
-            <Popular />
-            <GoodOffer />
+            {/* <Popular />
+            <GoodOffer /> */}
         </div>
     );
 };

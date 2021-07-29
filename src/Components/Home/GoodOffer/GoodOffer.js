@@ -8,7 +8,7 @@ const GoodOffer = () => {
     const info = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero sed quidem aut dolor voluptates eaque pariatur, distinctio similique sunt, quis suscipit consectetur quia, temporibus accusamus exercitationem enim minima impedit!'
 
     return (
-        <div className="d-flex ms-5">
+        <div className="d-flex">
             <div className="hero-box p-3">
                 <div className="d-flex p-2">
                 <h6>Buy With a good offer</h6>

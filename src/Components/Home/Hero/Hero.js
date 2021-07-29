@@ -13,6 +13,8 @@ import Gallery from '../ProductCarousel/Gallery';
 import ElectronicPdCarousel from '../ProductCarousel/ElectronicPdCarousel';
 import Features from '../Features/Features';
 import CarouselDemo from '../Test/CarouselDemo';
+import GoodOffer from '../GoodOffer/GoodOffer';
+import Popular from '../Popular/Popular';
 
 const Hero = () => {
     return (
@@ -33,6 +35,8 @@ const Hero = () => {
                         <ElectronicPdCarousel/>
                         <Features/>
                         <CarouselDemo/>
+                        <Popular/>
+                        <GoodOffer/>
                     </div>
                 </div>
                 <HeroAdd />
