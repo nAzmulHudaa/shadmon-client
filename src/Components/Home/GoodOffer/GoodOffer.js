@@ -1,7 +1,7 @@
 import { faBookmark, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import hero from '../../../images/hero.jpg';
+import pepsodent from '../../../images/pepsodent.jpg';
 
 const GoodOffer = () => {
     const [readMore, setReadMore] = useState(false);
@@ -18,7 +18,7 @@ const GoodOffer = () => {
                     <h2>Most Popular Choice!</h2>
                 </div> */}
                 <div className="hero-img">
-                    <img src={hero} alt="apartment" className=' rounded-top' />
+                    <img src={pepsodent} alt="" className='rounded-top' />
                 </div>
                 <div className="hero-content mt-md-2 mb-md-2">
                     <div className="hero-info">

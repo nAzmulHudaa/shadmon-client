@@ -6,7 +6,7 @@
     
 }
 .hero-img img{
-    width: 515px;
+    width: 528px;
     height: 270px;
 }
 .hero-info{
@@ -22,6 +22,8 @@ padding: 0 10px;
 }
 .pd-details{
     margin-left: 10px;
+    margin-top: 10px;
+    width: 450px;
 }
 .overlay-text h2{
     position: absolute;

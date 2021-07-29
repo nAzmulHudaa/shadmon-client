@@ -1,0 +1,16 @@
+.priceTag{
+    position: relative;
+    left: 110px;
+}
+.priceTag2{
+    position: relative;
+    left: 120px;
+}
+.popular-pd p{
+    margin: 0;   
+}
+.popular-btn{
+    position: relative;
+    left: 178px;
+    top: 50px;
+}
