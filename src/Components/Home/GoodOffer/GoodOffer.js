@@ -9,8 +9,8 @@ const GoodOffer = () => {
 
     return (
         <div className="d-flex">
-            <div className="hero-box p-3">
-                <div className="d-flex p-2">
+            <div className="hero-box ">
+                <div className="d-flex justify-content-lg-between p-2">
                 <h6>Buy With a good offer</h6>
                 <h6 className="m-left">All Offer</h6>
                 </div>

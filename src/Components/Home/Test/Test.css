@@ -1,12 +1,38 @@
 .carousel-demo .product-item .product-item-content {
-    border: 1px solid var(--surface-d);
     border-radius: 3px;
     margin: .3rem;
     text-align: center;
-    padding: 2rem 0;
 }
 
 .carousel-demo .product-item .product-image {
     width: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.product-item img{
+    border-radius: 100%;
+    margin: 10px 0px ;
+    width: 120px;
+    height: 108px;
+    border: 3px solid royalblue;
+}
+.overlay-img-seller{
+    padding: 3px 6px;
+    background-color: royalblue;
+    color: white;
+    width: 180px;
+    position: absolute;
+    top: 100px;
+    margin-left:10px ;
+    border-radius: 10px;
+}
+.connect-btn{
+    border: 1px solid royalblue;
+    padding: 4px 15px;
+    border-radius: 30px;
+    color:gray;
+    
 }

@@ -33,25 +33,32 @@ const CarouselDemo = () => {
     const productService = new ProductService();
 
     useEffect(() => {
-        productService.getProductsSmall().then(data => setProducts(data.slice(0,9)));
+        productService.getProductsSmall().then(data => setProducts(data.slice(0, 9)));
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
+    //console.log(products[0].image)
     const productTemplate = (product) => {
         return (
             <div className="product-item">
                 <div className="product-item-content">
-                    <div className="p-mb-3">
-                        <img src={`${product.image}`} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={product.name} className="product-image" />
+                    <div className="p-mb-5">
+                        <img src={`${product.image}`} alt={product.name} className="" />
                     </div>
-                    <div>
-                        <h4 className="p-mb-1">{product.name}</h4>
-                        <h6 className="p-mt-0 p-mb-3">${product.price}</h6>
-                        <span className={`product-badge status-${product.inventoryStatus.toLowerCase()}`}>{product.inventoryStatus}</span>
-                        <div className="car-buttons p-mt-5">
-                            <Button icon="pi pi-search" className="p-button p-button-rounded p-mr-2" />
-                            <Button icon="pi pi-star" className="p-button-success p-button-rounded p-mr-2" />
-                            <Button icon="pi pi-cog" className="p-button-help p-button-rounded" />
+                    <div className="overlay-img-seller text-center">
+                        <div className="overlay-img-seller-content">
+                            <h6>12998</h6>
+                            <h5>People Connected</h5>
                         </div>
+                    </div>
+                    <div className=''>
+                        {/* <h4 className="p-mb-1">{product.name}</h4>
+                        <h6 className="p-mt-0 p-mb-3">${product.price}</h6>
+                        <span className={`product-badge status-${product.inventoryStatus.toLowerCase()}`}>{product.inventoryStatus}</span> */}
+                        <h6 className='p-mb-1 mt-4'>Anik Traders</h6>
+                        <p className='m-0 p-0' style={{color:'gray'}}>Electric & Electronics</p>
+                        <p className='m-0 p-0'  style={{color:'gray'}}>Dhaka</p>
+                        <button className='connect-btn'>Connect & See</button>
+
+
                     </div>
                 </div>
             </div>
@@ -60,20 +67,21 @@ const CarouselDemo = () => {
 
     return (
         <div className="carousel-demo">
-           
-            <div className="card">
-                <Carousel value={products} numVisible={2} numScroll={3} responsiveOptions={responsiveOptions}
-                    itemTemplate={productTemplate} />
-            </div>
-            <div className="card">
-                <Carousel value={products} numVisible={2} numScroll={1} responsiveOptions={responsiveOptions} className="custom-carousel" circular
-                    autoplayInterval={3000} itemTemplate={productTemplate}/>
-               
-            </div> 
 
-        
+            <div className="card mt-4 mb-4">
+                <div className="d-flex justify-content-between">
+                    <h6 className='ms-3' style={{}}>Connect With Best Sellers</h6>
+                    <h6 className='me-3'>See All</h6>
+
+                </div>
+                <Carousel value={products} numVisible={2} numScroll={1} responsiveOptions={responsiveOptions} className="custom-carousel" circular
+                    autoplayInterval={3000} itemTemplate={productTemplate} />
+
+            </div>
+
+
         </div>
     );
 }
-                
+
 export default CarouselDemo;

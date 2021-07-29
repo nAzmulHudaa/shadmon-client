@@ -67,7 +67,7 @@ const ElectronicPdCarousel = () => {
                         <img src={wallet} className='rounded w-100 ' />
                         <div className="" style={{borderBottom:'2px solid gray'}}>
                             <h5 className='m-0 p-0' style={{fontSize:'15px'}}>Land T Cresent Bay</h5>
-                            <div className="d-flex mb-2 justify-content-lg-between">
+                            <div className="d-flex mb-2 justify-content-between">
                                 <div>
                                     <h5 className='m-0 p-0'>$256</h5>
                                 </div>
