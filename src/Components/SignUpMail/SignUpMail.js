@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { Button, Grid, Typography } from '@material-ui/core';
+import {  Grid, Typography } from '@material-ui/core';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SignUpModal from '../SignUpModal/SignUpModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchDollar, faTag, faTags } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -35,6 +35,31 @@ leftGrid: {
 }));
 
 export default function TransitionsModal() {
+  const [token,setToken] = useState({});
+  const {  handleSubmit } = useForm();
+  const onSubmit = data => {
+    const email = document.getElementById('email').value;
+    const pass = document.getElementById('password').value;
+    const loginCredentials = {
+      email:email,
+      password:pass
+    }
+    fetch('http://admin.atikshakil.info/api/login',{
+      method:'POST',
+      headers:{
+        'Content-type':'application/json'
+      },
+      body:JSON.stringify(loginCredentials)
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data.token);
+    sessionStorage.setItem("token",data.token)
+      window.location.assign('/user')
+    })
+  };
+  //console.log(token)
+
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -103,16 +128,17 @@ export default function TransitionsModal() {
                 <Grid item lg={6}>
                     <CancelIcon className={classes.cancelBtn} onClick={handleClose}/>
                     
-            <form action="" className="ms-4">
+            <form onSubmit={handleSubmit(onSubmit) }className="ms-4">
                 
                 <label htmlFor="">Email</label>
-                <input type="text" className="form-control" />
+                <input type="text" className="form-control" id ='email' name='email' />
                 <br />
                 <label htmlFor="">Password</label>
-                <input type="password" className="form-control" />
+                <input type="password" className="form-control" name='password' id='password' />
                 <br />
                 <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-primary btnColor" type="button">Login</button>
+             
+                <input type="submit" value='Login' className='btn btn-primary btnColor'/>
                 </div>
                 <br />
                 <div className="text-center">

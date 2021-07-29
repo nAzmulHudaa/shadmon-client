@@ -1,0 +1,38 @@
+.promotion-text{
+    background-color: #82bd39fa;
+    padding: 0 26px;
+    position: relative;
+    top: 26px;
+    color: white;
+}
+.promotion-icon{
+    margin-top: 13px;
+    margin-right: 12px;
+}
+.promotion-divider{
+    border-left: 4px solid #fff;
+    height: 50px;
+    margin-right: 15px;
+}
+.promotion-overlay-text{
+    color: #fff;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+.promotion-overlay-text h5{
+    margin: 0;
+    padding: 0;
+}
+.promotion-info{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.promotion-info h5{
+    margin: 0;
+    padding: 0;
+}
+.promotion-info p{
+    margin: 0;
+    padding: 0;
+}

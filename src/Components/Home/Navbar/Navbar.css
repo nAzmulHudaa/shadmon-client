@@ -1,3 +1,7 @@
+.container-custom{
+    width: 970px;
+}
+
 .nav-mid ul, .nav-end ul{
     list-style: none;
     margin-top: 15px;
@@ -17,15 +21,25 @@
     border-radius: 30px;
     font-weight: 400;
 }
-
-.nav-mid button:hover, .active,.nav-end button:hover,.nav-mobile button:hover{
+.nav-mid button:hover, .active,.nav-end button:hover{
     background-color: #6C757D;
     color: white;
+}
+.dropdown-menu li{
+    background: none;
+}
+.dropdown-menu li:hover{
+    background: white;
+    color: black;
 }
 .logo{
     color: #586067;
     font-size: 35px;
     cursor: pointer;
+    text-decoration: none;
+}
+.logo:hover{
+    color: #586067;
 }
 .active-post{
     background-color: royalblue;
@@ -41,13 +55,17 @@
     border-bottom: 1px solid #7f828640;
 }
 .navbar-icon{
-    background-color: #c0bbbb;
-    border-radius: 50%;
+    /* background-color: #c0bbbb; */
+    /* border-radius: 50%; */
     font-size: 23px;
     padding: 4px 0px;
     margin-top: 5px;
     cursor: pointer;
-    
+}
+.nav-end-icons li{
+    background-color: #c0bbbb;
+    border-radius: 20px;
+    padding: 0 4px;
 }
 .svg-inline--fa.fa-w-10{
     width: 22px;
@@ -59,45 +77,42 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     color: black;
 }
-.nav-mid-ul,.nav-end-ul,.nav-end-icons{
+.nav-end-icons{
     display: flex;
+    
 }
 
 .nav-mobile{
     display: none;
 }
-.nav-mid{
-    margin: auto;
+.nav-mid-btn button{
+    margin: 0 4px;
 }
-.nav-desktop{
-    display: flex;
-  
-}   
+.nav-mid-btn {
+    position: relative;
+    left: 7px;
+}
+
+
+
 @media (min-width: 481px) and (max-width: 767px) {
-    .nav-desktop{
-        display: none;
-    }   
-    .nav-mobile{
-        display: flex;
-    }
-    .nav-mobile li{
-        margin: 0 4px;
-    }
-  
+    
     .logo{
         color: #586067;
         font-size: 20px;
         cursor: pointer;
     }
-    .container-fluid{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
+  .dropdown:hover{
+      background: white;
   }
-  
-  
+  .logo-div a{
+    text-decoration: none;
+  }
+  .logo-div a:hover{
+      text-decoration: none;
+      color: #586067;
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
     .nav-desktop{
         display: none;
@@ -116,11 +131,7 @@
         font-size: 20px;
         cursor: pointer;
     }
-    .container-fluid{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
+   
 
   }
   

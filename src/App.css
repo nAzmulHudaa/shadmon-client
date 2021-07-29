@@ -14,3 +14,11 @@
   border: none !important;
 }
 
+body{
+  background-color: #EAEFF5;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
