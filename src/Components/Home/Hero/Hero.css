@@ -34,39 +34,3 @@ padding: 0 10px;
     padding: 4px 31px;
 
 }
-.add-box{
-    margin-left: 25px;
-    width: 160px;
-}
-.add-box img{
-    width: 160px;
-    margin-top: 30px;
-    margin-left: 0px;
-}
-.pd-details{
-    margin-bottom: 0px;
-}
-
-
-.hero-container{
-    width:515px;
-}
-.divider{
-    border: 1px solid #6C757D;
-    height: 14px;
-    margin-top: 6px;
-}
-
-.details{
-
-    cursor: pointer;
-}
-.hero-mid{
-    margin-top: -6px;
-}
-.price{
-    margin-top: -10px;
-}
-.last{
-    margin-top: -5px;
-}
