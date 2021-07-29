@@ -47,6 +47,9 @@ function App() {
           <Route path="/loginbar">
             <LoginBar />
           </Route>
+          {/* <Route path="/slider">
+            <Slider />
+          </Route> */}
           <Route path='/'>
             <Home/>
           </Route>

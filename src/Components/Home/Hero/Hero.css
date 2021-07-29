@@ -5,7 +5,18 @@
     margin-top: 15px;
     border-radius: 10px;
 }
-.hero-img{}
+.hero-img img{
+    width: 515px;
+    height: 270px;
+}
+.author_logo{
+    width: 40px;
+    margin-top: 20px;
+}
+.last {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+}
 .hero-content{
     padding: 10px 15px;
 }
@@ -22,4 +33,24 @@
     border-radius: 20px;
     padding: 4px 31px;
 
+}
+.priceTag {
+    margin-left: 100px;
+}
+.priceTag2 {
+    margin-left: 110px;
+}
+.priceTag3 {
+    margin-left: 140px;
+}
+.price-container {
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.timer-container{
+    padding: 5px;
+}
+.m-left {
+    margin-left:280px;
 }
