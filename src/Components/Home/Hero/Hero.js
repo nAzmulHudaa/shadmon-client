@@ -12,6 +12,7 @@ import CarouselItem from '../ProductCarousel/CarouselItem';
 import Gallery from '../ProductCarousel/Gallery';
 import ElectronicPdCarousel from '../ProductCarousel/ElectronicPdCarousel';
 import Features from '../Features/Features';
+import CarouselDemo from '../Test/CarouselDemo';
 
 const Hero = () => {
     return (
@@ -31,6 +32,7 @@ const Hero = () => {
                         <Gallery/>
                         <ElectronicPdCarousel/>
                         <Features/>
+                        <CarouselDemo/>
                     </div>
                 </div>
                 <HeroAdd />
