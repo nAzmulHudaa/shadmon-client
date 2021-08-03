@@ -9,7 +9,7 @@
 .nav-mid ul li, .nav-end ul li {
     margin: 0px 6px;
 }
-.nav-mid button, .nav-end button{
+.nav-end button{
     padding: 3px 12px;
     border: 1px solid #6C757D;
     border-radius: 30px;
@@ -21,7 +21,7 @@
     border-radius: 30px;
     font-weight: 400;
 }
-.nav-mid button:hover, .active,.nav-end button:hover{
+.nav-end button:hover{
     background-color: #6C757D;
     color: white;
 }
@@ -88,11 +88,18 @@
 .nav-mid-btn button{
     margin: 0 4px;
 }
-.nav-mid-btn {
+.nav-mid a {
+    margin: 0px 10px;
+    text-decoration:none;
+    color: gray;
     position: relative;
-    left: 7px;
+    top: 6px;
+    left: 21px;
+    
 }
-
-
-
-  
+.active{
+    color:black;
+}
+.nav-mid h6{
+    font-size: 16px;
+}

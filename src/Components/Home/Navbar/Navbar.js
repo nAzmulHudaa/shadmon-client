@@ -26,10 +26,14 @@ const Navbar = () => {
                                         <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <ul class="navbar-nav ms-auto nav-mid">
-                                        <div className="nav-mid-btn">
-                                                <button className=''>Loan</button>
+                                        <div className="d-flex">
+                                                {/* <button className=''>Loan</button>
                                                 <button className=''>Offers</button>
-                                                <button className=''>Bid</button>
+                                                <button className=''>Bid</button> */}
+                                                <a href="#" ><h6 className='active'>All Adds</h6></a>
+                                                <a href="#"><h6 >Loan</h6></a>
+                                                <a href="#"><h6 >Offer</h6></a>
+                                                <a href="#"><h6 >Bid</h6></a>
                                         </div>
 
                                 </ul>

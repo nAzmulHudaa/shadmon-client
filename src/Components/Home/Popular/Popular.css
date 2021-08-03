@@ -14,3 +14,12 @@
     left: 178px;
     top: 50px;
 }
+.bid-input{
+    width: 64px;
+    height: 37px;
+    border-radius: 4px;
+    border: 2px solid #0B5ED7;
+    position:relative;
+    top:3px;
+
+}

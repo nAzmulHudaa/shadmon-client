@@ -1,12 +1,9 @@
 import { faBookmark, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
 import hero from '../../../images/hero.jpg';
 import './Popular.css'
 
 const Popular = () => {
-    const [readMore, setReadMore] = useState(false);
-    const info = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vero sed quidem aut dolor voluptates eaque pariatur, distinctio similique sunt, quis suscipit consectetur quia, temporibus accusamus exercitationem enim minima impedit!'
 
     return (
         <div className="d-flex popular-pd ">
@@ -53,7 +50,8 @@ const Popular = () => {
                                     <div className="d-flex justify-content-between">
                                         <h3>Your Price </h3>
                                         <div className="priceTag3">
-                                            <button className="btn btn-outline-primary">$425</button>
+                                            <input type="text" className='bid-input' defaultValue='$425' />
+                                            {/* <button className="btn btn-outline-primary">$425</button> */}
                                             <button className="btn btn-primary ms-3">BID NOW</button>
                                         </div>
                                     </div>

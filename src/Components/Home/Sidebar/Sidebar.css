@@ -104,3 +104,8 @@
 .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-item-content{
     margin-top: -5px;
 }
+
+#sorting input{
+    position:relative;
+    top: 8px;
+}
