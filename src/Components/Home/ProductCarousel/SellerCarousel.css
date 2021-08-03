@@ -36,3 +36,11 @@
     border-radius: 15px;
     color: gray;
 }
+.avatar {
+    vertical-align: middle;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: relative;
+    left: 16px;
+}

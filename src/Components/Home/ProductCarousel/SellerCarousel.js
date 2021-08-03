@@ -3,7 +3,6 @@ import Carousel from 'react-grid-carousel'
 import building from '../../../images/building1.jpg'
 import building2 from '../../../images/building3.jpg';
 import './SellerCarousel.css'
-import { Avatar } from 'primereact/avatar';
 
 
 const SellerCarousel = () => {
@@ -25,7 +24,8 @@ const SellerCarousel = () => {
         cols={3} rows={1} gap={10} loop responsiveLayout={responsiveLayout}
       >
         <Carousel.Item>
-          <Avatar image={building} className="p-mr-2 seller-carousel-img" shape="circle" />
+          {/* <Avatar image={building} className="p-mr-2 seller-carousel-img" shape="circle" /> */}
+          <img src={building} alt="Avatar" class="avatar seller-carousel-img" />
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
@@ -40,7 +40,9 @@ const SellerCarousel = () => {
 
         </Carousel.Item>
         <Carousel.Item>
-          <Avatar image={building2} className="p-mr-2 seller-carousel-img" shape="circle" />
+          {/* <Avatar image={building2} className="p-mr-2 seller-carousel-img" shape="circle" /> */}
+          <img src={building2} alt="Avatar" class="avatar seller-carousel-img" />
+
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
@@ -53,50 +55,55 @@ const SellerCarousel = () => {
 
         </Carousel.Item>
         <Carousel.Item>
-          <Avatar image={building} className="p-mr-2 seller-carousel-img" shape="circle" />
+          {/* <Avatar image={building} className="p-mr-2 seller-carousel-img" shape="circle" /> */}
+          <img src={building} alt="Avatar" class="avatar seller-carousel-img" />
+
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
           </div>
           <div className="seller-details">
-            <h5  className='m-0'>Anik Traders</h5>
+            <h5 className='m-0'>Anik Traders</h5>
             <p className="text-secondary mb-0">Electric & Electronics <br />Dhaka</p>
             <button>Connect & See</button>
           </div>
 
         </Carousel.Item>
         <Carousel.Item>
-          <Avatar image={building2} className="p-mr-2 seller-carousel-img" shape="circle" />
+          {/* <Avatar image={building2} className="p-mr-2 seller-carousel-img" shape="circle" /> */}
+          <img src={building} alt="Avatar" class="avatar seller-carousel-img" />
+
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
           </div>
           <div className="seller-details">
-            <h5  className='m-0'>Anik Traders</h5>
+            <h5 className='m-0'>Anik Traders</h5>
             <p className="text-secondary mb-0">Electric & Electronics <br />Dhaka</p>
             <button>Connect & See</button>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <Avatar image={building} className="p-mr-2 seller-carousel-img" shape="circle" />
+        <img src={building} alt="Avatar" class="avatar seller-carousel-img" />
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
           </div>
           <div className="seller-details">
-            <h5  className='m-0'>Anik Traders</h5>
+            <h5 className='m-0'>Anik Traders</h5>
             <p className="text-secondary mb-0">Electric & Electronics <br />Dhaka</p>
             <button>Connect & See</button>
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <Avatar image={building2} className="p-mr-2 seller-carousel-img" shape="circle" />
+        <img src={building2} alt="Avatar" class="avatar seller-carousel-img" />
+
           <div className="seller-details-top">
             <h6 className='m-0'>12988</h6>
             <p className='mb-0'>People Connected</p>
           </div>
           <div className="seller-details">
-            <h5  className='m-0'>Anik Traders</h5>
+            <h5 className='m-0'>Anik Traders</h5>
             <p className="text-secondary mb-0">Electric & Electronics <br />Dhaka</p>
             <button>Connect & See</button>
           </div>

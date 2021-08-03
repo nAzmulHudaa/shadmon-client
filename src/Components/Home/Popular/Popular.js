@@ -24,7 +24,7 @@ const Popular = () => {
                                 <img className='author_logo' src="https://cdn.freelogovectors.net/wp-content/uploads/2021/04/xiaomi-logo-freelogovectors.net_.png" alt="" />
                             </div>
                             <div className='pd-details'>
-                                <h5 style={{ fontSize: '20px' }}>2 BHK Residential Apartment in Chandivali</h5>
+                                <h5 style={{ fontSize: '20px',margin:'0px' }}>2 BHK Residential Apartment in Chandivali</h5>
                                 <div className="hero-mid d-flex">
                                     <div className="first d-flex">
                                         <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#6C757D' }} className='mt-md-1 mt-1 me-1 me-md-2' />
