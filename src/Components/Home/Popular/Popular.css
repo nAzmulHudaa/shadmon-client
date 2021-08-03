@@ -21,5 +21,31 @@
     border: 2px solid #0B5ED7;
     position:relative;
     top:3px;
-
+}
+.popular-img {
+    width: 500px;
+    height: 270px;
+}
+.popular-img img{
+    width: 485px;
+    height: 270px;
+    margin-left: 20px;
+}
+.overlay-text-popular h2{
+    position: absolute;
+    top:55px;
+    left: -8px;
+    color: white;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 4px;
+    padding: 4px 20px;
+    margin-left: 10px;
+}
+.popular-bid{
+    padding:0px 2px;
+    border: none;
+    border-radius: 5px;
+    background-color:tomato;
+    margin-right:12px
 }

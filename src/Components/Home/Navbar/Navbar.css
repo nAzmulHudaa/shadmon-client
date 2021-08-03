@@ -103,3 +103,15 @@
 .nav-mid h6{
     font-size: 16px;
 }
+.msg_number{
+    color:white;
+    background-color: red;
+    position: absolute;
+    top: 4px;
+    right: 236px;
+    height: 22px;
+    width: 23px;
+    text-align:center;
+    border-radius: 20px;
+    font-size: 14px;
+}

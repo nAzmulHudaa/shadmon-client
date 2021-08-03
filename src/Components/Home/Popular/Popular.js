@@ -8,10 +8,14 @@ const Popular = () => {
     return (
         <div className="d-flex popular-pd ">
             <div className="hero-box">
-                <div className="overlay-text">
+                <div className='d-flex justify-content-between text-secondary mb-2 mt-2'>
+                    <p className='ms-md-3'>Buy & Bid a Product at unbelievable price</p>
+                    <button className='popular-bid'>Bid Now</button>
+                </div>
+                <div className="overlay-text-popular">
                     <h2>Most Popular Choice!</h2>
                 </div>
-                <div className="hero-img">
+                <div className="popular-img">
                     <img src={hero} alt="apartment" className=' rounded-top' />
                 </div>
                 <div className="hero-content mt-md-2 mb-md-3">

@@ -39,16 +39,18 @@ const Navbar = () => {
                                 </ul>
                                 <div className="navbar ms-auto nav-end ">
                                         <ul className='d-flex'>
-                                                <li><button className='active-post'><b>Post Ads</b></button></li>
-                                                <li><button className=''>Inbox</button></li>
                                                 <li><button className=''>Bangla</button></li>
+                                                <li><button className=''>Inbox</button></li>
+                                                <span className='msg_number'>29</span>
+                                                <li><button className='active-post'><b>Post Ads</b></button></li>
+                                                
                                                 <div className="nav-end-icons">
                                                         <li ><FontAwesomeIcon icon={faShoppingCart} className='navbar-icon' /></li>
                                                         <li><FontAwesomeIcon icon={faPhoneAlt} className='navbar-icon' /></li>
                                                         {
-                                                                
-                                                              loggedInUser.email? <li><FontAwesomeIcon icon={faUserAlt} className='navbar-icon' onClick={handleUser} /></li>:
-                                                                <LoginPopup />
+
+                                                                loggedInUser.email ? <li><FontAwesomeIcon icon={faUserAlt} className='navbar-icon' onClick={handleUser} /></li> :
+                                                                        <LoginPopup />
                                                         }
                                                 </div>
                                         </ul>
