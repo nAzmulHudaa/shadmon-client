@@ -3,14 +3,36 @@
     background-color: #fff;
     padding: 13px 0px;
 }
-
 .seller-carousel-img{
-   
     padding: 5px;
-    border: 1px solid blue;
-   
+    border: 1px solid #4095fb;
 }
 .p-avatar{
-    width:9rem;
+    width:8rem;
     height:8rem;
+    position: relative;
+    left: 15px;
+}
+.seller-details-top{
+    padding: 2px 0px;
+    color: white;
+    border-radius: 7px;
+    background-color: #4095fb;
+    text-align: center; 
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+    left: 5px;
+}
+.seller-details{
+    position: relative;
+    bottom: 13px;
+    left: 5px;
+    text-align: center;
+}
+.seller-details button{
+    padding: 3px 12px;
+    border: 1px solid #4095fb;
+    border-radius: 15px;
+    color: gray;
 }
