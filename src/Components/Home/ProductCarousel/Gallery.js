@@ -1,7 +1,6 @@
 import React from 'react'
 import Carousel from 'react-grid-carousel'
 import building from '../../../images/building1.jpg'
-import building1 from '../../../images/building2.jpg'
 import building2 from '../../../images/building3.jpg'
 import building3 from '../../../images/building4.jpg'
 

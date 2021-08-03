@@ -4,7 +4,6 @@ import React from 'react';
 import Carousel from 'react-grid-carousel'
 import tshirt from '../../../images/t-shirt.jpg'
 import wallet from '../../../images/wallet.jpg'
-import watch from '../../../images/watch.jpg'
 import './ProductCarousel.css'
 
 

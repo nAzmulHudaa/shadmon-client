@@ -8,13 +8,13 @@ import Products from '../Products/Products';
 import Promotion from '../Promotion/Promotion';
 import AnotherPd from '../Products/AnotherPd';
 import Place from '../Place/Place';
-import CarouselItem from '../ProductCarousel/CarouselItem';
 import Gallery from '../ProductCarousel/Gallery';
 import ElectronicPdCarousel from '../ProductCarousel/ElectronicPdCarousel';
 import Features from '../Features/Features';
 import CarouselDemo from '../Test/CarouselDemo';
 import GoodOffer from '../GoodOffer/GoodOffer';
 import Popular from '../Popular/Popular';
+import SellerCarousel from '../ProductCarousel/SellerCarousel';
 
 const Hero = () => {
     return (
@@ -34,6 +34,7 @@ const Hero = () => {
                         <Gallery/>
                         <ElectronicPdCarousel/>
                         <Features/>
+                        <SellerCarousel/>
                         <CarouselDemo/>
                         <Popular/>
                         <GoodOffer/>

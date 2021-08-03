@@ -1,0 +1,16 @@
+.seller-carousel{
+    margin: 10px 0px;
+    background-color: #fff;
+    padding: 13px 0px;
+}
+
+.seller-carousel-img{
+   
+    padding: 5px;
+    border: 1px solid blue;
+   
+}
+.p-avatar{
+    width:9rem;
+    height:8rem;
+}

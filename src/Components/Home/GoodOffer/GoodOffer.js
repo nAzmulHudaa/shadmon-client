@@ -14,9 +14,7 @@ const GoodOffer = () => {
                 <h6>Buy With a good offer</h6>
                 <h6 className="m-left">All Offer</h6>
                 </div>
-                {/* <div className="overlay-text">
-                    <h2>Most Popular Choice!</h2>
-                </div> */}
+               
                 <div className="hero-img">
                     <img src={pepsodent} alt="" className='rounded-top' />
                 </div>

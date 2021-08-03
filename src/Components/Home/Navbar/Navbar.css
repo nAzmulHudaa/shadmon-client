@@ -95,43 +95,4 @@
 
 
 
-@media (min-width: 481px) and (max-width: 767px) {
-    
-    .logo{
-        color: #586067;
-        font-size: 20px;
-        cursor: pointer;
-    }
-  .dropdown:hover{
-      background: white;
-  }
-  .logo-div a{
-    text-decoration: none;
-  }
-  .logo-div a:hover{
-      text-decoration: none;
-      color: #586067;
-  }
-}
-@media (min-width: 320px) and (max-width: 480px) {
-    .nav-desktop{
-        display: none;
-    }   
-    .nav-mobile{
-        display: flex;
-        list-style: none;
-        
-    }
-    .nav-mobile li{
-        margin: 0 4px;
-    }
-   
-    .logo{
-        color: #586067;
-        font-size: 20px;
-        cursor: pointer;
-    }
-   
-
-  }
   
