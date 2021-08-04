@@ -1,12 +1,17 @@
 import { faBookmark, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useState } from 'react';
 import hero from '../../../images/hero.jpg';
 import './Popular.css'
 
-const Popular = () => {
 
+const Popular = () => {
+   
+
+    
     return (
         <div className="d-flex popular-pd ">
+            
             <div className="hero-box">
                 <div className='d-flex justify-content-between text-secondary mb-2 mt-2'>
                     <p className='ms-md-3'>Buy & Bid a Product at unbelievable price</p>
@@ -76,6 +81,7 @@ const Popular = () => {
                                                 <h3 className="text-danger">56</h3>
                                                 <em>Days</em>
                                             </div>
+                                        
                                         </div>
                                         <div className='popular-btn'>
                                             <button className="btn btn-primary">See More</button>
@@ -89,7 +95,8 @@ const Popular = () => {
                     </div>
                 </div>
             </div>
-        </div>);
+        </div>
+        );
 };
 
 export default Popular;
