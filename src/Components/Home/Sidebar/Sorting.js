@@ -59,8 +59,8 @@ const Sorting = () => {
                                     sortData.slice(0, visible).map(item => {
                                         return (
                                             <span className='d-flex'>
-                                                <input type="checkbox" name="urgent" id="urgent" />
-                                                <label htmlFor="urgent"><MenuItem >{item.name}</MenuItem></label>
+                                                <input type="checkbox" name={item.name} id ={item.name} />
+                                                <label htmlFor={item.name}><MenuItem >{item.name}</MenuItem></label>
                                             </span>
 
                                         )

@@ -22,21 +22,21 @@ const Hero = () => {
                 <div className="">
                     <Sidebar />
                 </div>
-                <div className="hero-container">
-                    <div className="hero-content ">
-                        <HeroNav />
-                        <HeroTop />
-                        <Products/>
-                        <Promotion/>
-                        <AnotherPd/>
-                        <Place/>
-                        <Gallery/>
-                        <ElectronicPdCarousel/>
-                        <Features/>
-                        <SellerCarousel/>
-                        <Popular/>
-                        <GoodOffer/>
-                    </div>
+                <div className='hero-container'>
+                        <div className="hero-content ">
+                            <HeroNav />
+                            <HeroTop />
+                            <Products />
+                            <Promotion />
+                            <AnotherPd />
+                            <Place />
+                            <Gallery />
+                            <ElectronicPdCarousel />
+                            <Features />
+                            <SellerCarousel />
+                            <Popular />
+                            <GoodOffer />
+                        </div>
                 </div>
                 <HeroAdd />
             </div>

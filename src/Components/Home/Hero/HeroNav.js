@@ -4,7 +4,7 @@ import React from 'react';
 
 const HeroNav = () => {
     return (
-        <div className="hero-icons">
+        <div className="hero-icons hero-nav">
             <div className=" justify-content-center m-auto">
                 <div className="hero-icons d-flex mt-md-1" style={{ cursor: 'pointer' }}>
                     <div className="d-flex  ">
