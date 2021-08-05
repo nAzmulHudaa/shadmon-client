@@ -1,7 +1,6 @@
 import React from 'react';
 import ProductCarousel from './ProductCarousel';
 import building from '../../../images/building1.jpg'
-import building1 from '../../../images/building2.jpg'
 import building2 from '../../../images/building3.jpg'
 import building3 from '../../../images/building4.jpg'
 import './ProductCarousel.css'
@@ -9,8 +8,6 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 
-import { Carousel } from 'primereact/carousel';
-import { Button } from 'primereact/button';
 
 const CarouselItem = () => {
     const responsiveOptions = [

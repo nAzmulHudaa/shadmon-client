@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TopSidebar = ({ category }) => {
 
-    console.log(category)
+  //  console.log(category)
     const { name, bn_name, icon, sub_category } = category;
     const sub_category_list = sub_category.map((item, index) => {
         return {
@@ -28,7 +28,6 @@ const TopSidebar = ({ category }) => {
         };
 
     })
-    console.log(sub_category_list[0])
 
 
     return (

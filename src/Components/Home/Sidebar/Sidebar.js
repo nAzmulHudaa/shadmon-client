@@ -17,7 +17,7 @@ const Sidebar = () => {
     const getData = async () => {
       await axios.get('https://admin.atikshakil.info/api/categories')
         .then(data => {
-          console.log(data.data.data)
+         // console.log(data.data.data)
           setCategories(data.data.data);
         })
         .catch(err => {

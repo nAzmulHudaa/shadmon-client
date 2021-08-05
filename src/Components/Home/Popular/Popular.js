@@ -1,6 +1,5 @@
 import { faBookmark, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useState } from 'react';
 import hero from '../../../images/hero.jpg';
 import './Popular.css'
 
