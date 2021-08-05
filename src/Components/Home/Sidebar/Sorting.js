@@ -15,14 +15,18 @@ import './Sidebar.css'
 
 const Sorting = () => {
     const [sortData, setSortData] = useState([]);
-    const [visible, setVisible] = useState(2);
-    const [showMore, setShowMore] = useState(true);
+    const [visible, setVisible] = useState(1);
+
     const loadMore = () => {
         setVisible((prevValue) => prevValue + 1);
     }
+    
+    
     const decrease = () => {
-        setVisible((prevValue) => prevValue - 1);
+        setVisible((prevValue) => prevValue - 2);
+       
     }
+   
 
     // here we will fetch data asynchronusly from the api
 
@@ -39,8 +43,7 @@ const Sorting = () => {
         }
         getSortData()
     }, [])
-
-
+  
     return (
         <div id="sorting">
 
@@ -65,18 +68,19 @@ const Sorting = () => {
                                 }
                             </span>
 
-                            <p onClick={() => setShowMore(!showMore)} className='m-0'>
-                                {
-                                    showMore ?
+                            {/* <p onClick={() => setShowMore(!showMore)} className='m-0'> */}
+                               {
+                                     sortData.length>visible ? 
                                         <div>
                                             <b className="ms-4 ps-1" style={{ cursor: 'pointer' }} onClick={loadMore} >Show More</b>
                                         </div>
                                         :
                                         <div>
-                                            <b className="ms-4 ps-1" style={{ cursor: 'pointer' }} onClick={decrease}>See Less</b>
+                                            <b className="ms-4 ps-1" style={{ cursor: 'pointer' }} onClick={decrease} >See Less</b>
                                         </div>
                                 }
-                            </p>
+                            {/* </p>  */}
+                            
 
 
 
