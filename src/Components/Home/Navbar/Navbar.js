@@ -17,7 +17,7 @@ const Navbar = () => {
         return (
 
                 <div className='font nav-bar'>
-                        <nav class="navbar container-custom m-auto navbar-expand-lg navbar-light ">
+                        <nav class="navbar navbar-fixed-top container-custom m-auto navbar-expand-lg navbar-light ">
                                 <a class="navbar-brand text-info font-weight-bolder" href="/">
                                         <a href="/" className='logo'>shadaman</a>
                                         {/* <img src={} alt="" className='w-100' /> */}

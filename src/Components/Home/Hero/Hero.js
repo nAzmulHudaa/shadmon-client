@@ -14,6 +14,7 @@ import Features from '../Features/Features';
 import GoodOffer from '../GoodOffer/GoodOffer';
 import Popular from '../Popular/Popular';
 import SellerCarousel from '../ProductCarousel/SellerCarousel';
+import Caro from '../Caro'
 
 const Hero = () => {
     return (
@@ -36,6 +37,13 @@ const Hero = () => {
                             <SellerCarousel />
                             <Popular />
                             <GoodOffer />
+                        
+                            <Caro/>
+                            <Caro/>
+                            <Caro/>
+                            <Caro/>
+                            <Caro/>
+                            <Caro/>
                         </div>
                 </div>
                 <HeroAdd />

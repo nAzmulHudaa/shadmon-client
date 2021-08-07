@@ -53,6 +53,9 @@
     background-color: #F5F5F5;
     padding: 0px 30px;
     border-bottom: 1px solid #7f828640;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 .navbar-icon{
     /* background-color: #c0bbbb; */

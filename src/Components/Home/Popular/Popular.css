@@ -31,9 +31,12 @@
     height: 270px;
     margin-left: 20px;
 }
+.overlay-text-popular{
+    position: relative;
+}
 .overlay-text-popular h2{
     position: absolute;
-    top:55px;
+    top:18px;
     left: -8px;
     color: white;
     font-size: 25px;

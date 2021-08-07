@@ -13,15 +13,14 @@ const Gallery = () => {
     ]
   ]
   return (
-    <div className="product-slider premium-pd rounded  mb-3">
+   <div className = "test-slider">
+      <div className="product-slider premium-pd rounded  mb-3">
       <h6 className='ms-3' style={{ color: 'gray' }}>Premium Products</h6>
       <Carousel
         cols={2} rows={1} gap={10} loop responsiveLayout ={responsiveLayout}
       >
         <Carousel.Item>
-          <div className="featured">
-            <p className=''>Featured</p>
-          </div>
+
 
           <img src={building} className=' w-100 rounded' />
           <div className="overlay-card">
@@ -32,9 +31,7 @@ const Gallery = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="featured">
-            <p className=''>Featured</p>
-          </div>
+        
           <img src={building2} className=' w-100 rounded' />
           <div className="overlay-card">
             <h5 className='overlay-title'>Land T Cresent Bay</h5>
@@ -44,9 +41,7 @@ const Gallery = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="featured">
-            <p className=''>Featured</p>
-          </div>
+      
           <img src={building3} className='rounded w-100' />
           <div className="overlay-card">
             <h5 >Land T Cresent Bay</h5>
@@ -56,9 +51,6 @@ const Gallery = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="featured">
-            <p className=''>Featured</p>
-          </div>
           <img src={building} className=' rounded w-100' />
           <div className="overlay-card">
             <h5 className=''>Land T Cresent Bay</h5>
@@ -70,6 +62,7 @@ const Gallery = () => {
 
       </Carousel>
     </div>
+   </div>
   )
 }
 export default Gallery;
