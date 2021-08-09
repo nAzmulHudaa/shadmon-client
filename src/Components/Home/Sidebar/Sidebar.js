@@ -30,7 +30,8 @@ const Sidebar = () => {
 
   return (
 
-    <div id="sidebar">
+   <div className='main-sidebar'>
+      <div id="sidebar">
       <Sorting />
       <ProSidebar
       breakPoint = 'md'
@@ -88,6 +89,8 @@ const Sidebar = () => {
 
       </ProSidebar>
     </div>
+
+   </div>
 
   );
 };

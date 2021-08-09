@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import '../Navbar/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faPhoneAlt, faShoppingCart, faUserAlt } from '@fortawesome/free-solid-svg-icons';
+import {  faPhoneAlt, faShoppingCart, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import LoginPopup from '../../LoginPopup/LoginPopup';
 import { UserContext } from '../../../App';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
         return (
-
+        
                 <div className='font nav-bar'>
                         <nav class="navbar navbar-fixed-top container-custom m-auto navbar-expand-lg navbar-light ">
                                 <a class="navbar-brand text-info font-weight-bolder" href="/">

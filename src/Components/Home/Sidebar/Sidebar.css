@@ -24,10 +24,6 @@
 .pro-sidebar .pro-menu .pro-menu-item>.pro-inner-item:focus {
     color: black;
 }
-
-.sidebar {
-    margin: 70px 0px;
-}
 .sub_menu{
     width: 273px;
 }
@@ -50,13 +46,8 @@
 .footer a::marker{
     color: #908f8f;
 }
-.sub_custom{
 
-}
-/* .pro-sidebar{
-    width: 200px;
-    min-width: 200px;
-} */
+
 .pro-sidebar .pro-menu{
     padding: 0;
 }
@@ -93,8 +84,9 @@
 #sidebar{
     margin-top: 30px;
     margin-bottom: 10px;    
-    position: fixed;
-    left: 167px;
+    position:relative;
+    right:13px;
+
 }
 .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item{
     background: none;
@@ -108,3 +100,4 @@
     position:relative;
     top: 8px;
 }
+.main-sidebar{}

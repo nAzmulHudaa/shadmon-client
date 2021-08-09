@@ -20,31 +20,28 @@ const Hero = () => {
     return (
         <div className='font hero-section container-custom m-auto'>
             <div className="d-flex">
-                <div className="">
-                    <Sidebar />
-                </div>
+                <Sidebar />
                 <div className='hero-container'>
-                        <div className="hero-content ">
-                            <HeroNav />
-                            <HeroTop />
-                            <Products />
-                            <Promotion />
-                            <AnotherPd />
-                            <Place />
-                            <Gallery />
-                            <ElectronicPdCarousel />
-                            <Features />
-                            <SellerCarousel />
-                            <Popular />
-                            <GoodOffer />
-                        
-                            <Caro/>
-                            <Caro/>
-                            <Caro/>
-                            <Caro/>
-                            <Caro/>
-                            <Caro/>
-                        </div>
+                    <div className="hero-content ">
+                        <HeroNav />
+                        <HeroTop />
+                        <Products />
+                        <Promotion />
+                        <AnotherPd />
+                        <Place />
+                        <Gallery />
+                        <ElectronicPdCarousel />
+                        <Features />
+                        <SellerCarousel />
+                        <Popular />
+                        <GoodOffer />
+                        <Caro />
+                        <Caro />
+                        <Caro />
+                        <Caro />
+                        <Caro />
+                        <Caro />
+                    </div>
                 </div>
                 <HeroAdd />
             </div>

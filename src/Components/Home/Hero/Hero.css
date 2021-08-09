@@ -8,7 +8,7 @@
 
     margin-top: 10px;
     border-radius: 10px;
-    background: #f9ccb040;
+    background: #edb08e40;
 }
 .hero-img img{
     width: 515px;
@@ -40,12 +40,9 @@ padding: 0 7px;
     padding: 4px 31px;
 
 }
-.container-custom{
-    width: 515px;
-}
+
 .hero-container{
     width: 515px;
-    margin-left:267px;
 }
 .add-box img{
     width: 160px;
@@ -57,9 +54,12 @@ padding: 0 7px;
 }
 
 .add-box{
-    position:fixed;
-    right: 190px;
+    
 }
+
+
+/* accordian css */
+
 
 /* media queries */
 /* 

@@ -1,0 +1,6 @@
+.react-modal-sheet-container{
+    width: 515px!important;
+  
+    margin-left: 460px;
+    height: min(900px, calc(100% - env(safe-area-inset-top) - 34px)) !important;
+}

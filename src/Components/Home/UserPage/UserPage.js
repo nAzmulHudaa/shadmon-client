@@ -1,16 +1,26 @@
 import React from 'react';
 import { useContext } from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { UserContext } from '../../../App';
+import HeroAdd from '../Hero/HeroAdd';
+import Sidebar from '../Sidebar/Sidebar';
+import Modal from './Modal';
+import UserProfile from './UserProfile';
 
 const UserPage = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
    
     return (
-        <div>
-            <h1>User Profile</h1>
-            <h6>{loggedInUser.email}</h6>
+        <div className='font container-custom m-auto hero-section user-section'>
+            <div className="d-flex">
+                <Sidebar/>
+                  <div className="hero-container">
+                      <div className="hero-content">
+                        <UserProfile/>
+                      </div>
+                      
+                  </div>
+                <HeroAdd/>
+            </div>
         </div>
     );
 };
