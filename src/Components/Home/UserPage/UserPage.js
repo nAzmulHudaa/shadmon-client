@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { UserContext } from '../../../App';
 import HeroAdd from '../Hero/HeroAdd';
 import Sidebar from '../Sidebar/Sidebar';
-import Modal from './Modal';
 import UserProfile from './UserProfile';
 
 const UserPage = () => {
@@ -17,7 +16,6 @@ const UserPage = () => {
                       <div className="hero-content">
                         <UserProfile/>
                       </div>
-                      
                   </div>
                 <HeroAdd/>
             </div>

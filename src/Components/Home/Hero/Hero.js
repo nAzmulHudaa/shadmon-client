@@ -35,12 +35,6 @@ const Hero = () => {
                         <SellerCarousel />
                         <Popular />
                         <GoodOffer />
-                        <Caro />
-                        <Caro />
-                        <Caro />
-                        <Caro />
-                        <Caro />
-                        <Caro />
                     </div>
                 </div>
                 <HeroAdd />

@@ -15,7 +15,7 @@ const SellerCarousel = () => {
   ]
   return (
     <div className=" seller-carousel rounded  mb-3">
-      <div className="d-flex justify-content-between ">
+      <div className="d-flex justify-content-between mb-2 ">
         <h6 className='ms-3'>Connect With Sellers</h6>
         <h6 className='mb-0 me-3'>See all</h6>
       </div>
