@@ -7,7 +7,7 @@ import hero from '../../../images/hero.jpg'
 
 const HeroTop = () => {
 
-  
+
 
 
     return (
@@ -41,6 +41,19 @@ const HeroTop = () => {
                                     <h5 className='m-0' >$2,500 Cr</h5>
                                 </div>
                                 <div className="last ">
+                                    <div className="accordion accordion-flush" id="accordionFlushExample">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header" id="flush-headingOne">
+                                                <button className="accordion-button collapsed text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style={{ backgroundColor: '#ECDFDC' }}>
+                                                    <span><p style={{ position: 'relative', right: '15px' }} >Miami Trading,14 people Connected</p></span>
+                                                    <span style={{ position: 'relative', left: '50px' }}>Read More</span>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

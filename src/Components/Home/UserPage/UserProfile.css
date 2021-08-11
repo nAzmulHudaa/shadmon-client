@@ -5,11 +5,14 @@
 .profile-contents{
     background:white;
     border-radius: 8px;
+    width: 485px;
+    background: white;
+    margin: auto;
 }
 
-.profile-div{
+.profile-components{
     position: relative;
-    bottom: 50px
+    margin-top: -50px;
 }
 .box{
     width: 170px;
@@ -29,5 +32,27 @@
 }
 .accordion-button{
     height: 25px;
-    
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom:2px solid blue ;
+   border-top:none ;
+   border-left:none ;
+   border-right:none ;
+    background: none;
+}
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    color: #000;
+}
+.basic-inputs input{
+    width: 50%;
+    height: 40px;
+    border:1px solid gray;
+    border-radius:3px;
+}
+
+.basic-inputs input:focus-visible{
+    border:1px solid gray;
 }

@@ -9,8 +9,12 @@ import './UserProfile.css'
 import Carousel from 'react-grid-carousel'
 import building from '../../../images/building1.jpg'
 import building2 from '../../../images/building3.jpg';
+import { TabView, TabPanel } from 'primereact/tabview';
+import { Button } from 'primereact/button';
 
 const ProfileMain = () => {
+    const [activeIndex, setActiveIndex] = useState(1);
+
     // upload image with react hooks and preview image and remove input tagg
     const [image, setImage] = useState('');
     const [imagePreview, setImagePreview] = useState('');
@@ -39,60 +43,65 @@ const ProfileMain = () => {
     ]
     return (
         <div className="profile-div">
-            <div className="profile-contents">
-                <div className="profile-details" style={{ width: '470px', margin: 'auto' }} >
-                    <div className="profile-img text-center" >
-                        <img src={profileImg} alt="" style={{ borderRadius: '50%', width: "145px", height: '130px', margin: '25px 0', cursor: 'pointer' }} />
+            {/* profile content start */}
+            <div style={{position:'relative',top:"15px"}}>
+                <div className="profile-contents">
+                    <div className="profile-details" style={{ width: '470px', margin: 'auto' }} >
+                        <div className="profile-img text-center" >
+                            <img src={profileImg} alt="" style={{ borderRadius: '50%', width: "145px", height: '130px', margin: '25px 0', cursor: 'pointer' }} />
 
-                        <FontAwesomeIcon icon={faPlusCircle} style={{ color: 'red', fontSize: "29px", position: 'relative', right: '89px ', top: '70px', cursor: 'pointer' }} />
-                    </div>
-                    <div className="text-center">
-                        <input type="file" name="profile-picture" id="profile-input" accept="image/*" onChange={imageHandler} style={{ marginBottom: '10px', marginLeft: '50px' }} />
-                    </div>
-                    {/* profile top ddtails start */}
-                    <div className='d-flex ' style={{
-                        paddingBottom: "15x", paddingTop: '10px', borderBottom: '1px solid #d2cfcfc9 '
-                    }}>
-                        <div style={{ marginLeft: '13px', paddingRight: '85px' }}>
-                            <h6 style={{ fontSize: '26px' }}>Lovely Akter</h6>
-                            <p style={{ color: 'gray' }}>52254245512455</p>
+                            <FontAwesomeIcon icon={faPlusCircle} style={{ color: 'red', fontSize: "29px", position: 'relative', right: '89px ', top: '70px', cursor: 'pointer' }} />
                         </div>
-                        {/* divider start */}
-                        <div style={{ border: '1px solid #d2cfcfc9', height: '28px', position: 'relative', top: '10px' }}></div>
-                        {/* divider end */}
-                        <div style={{ paddingLeft: '25px' }}>
-                            <h6 style={{ fontSize: '24px', color: 'gray' }}>Account Type</h6>
-                            <div className="d-flex">
-                                <p style={{ color: 'gray', marginRight: '6px' }}>Free</p>
-                                <h6 className='' style={{ fontSize: '19px', marginRight: '6px' }}>Seller</h6>
-                                <div style={{ border: '1px solid #d2cfcfc9', height: '15px', position: 'relative', top: '6px' }}></div>
-                                <p style={{ marginLeft: '5px', fontWeight: '700', fontSize: '14px', marginTop: '3px' }}>Upgrade</p>
+                        <div className="text-center">
+                            <input type="file" name="profile-picture" id="profile-input" accept="image/*" onChange={imageHandler} style={{ marginBottom: '10px', marginLeft: '50px' }} />
+                        </div>
+                        {/* profile top ddtails start */}
+                        <div className='d-flex ' style={{
+                            paddingBottom: "15x", paddingTop: '10px', borderBottom: '1px solid #d2cfcfc9 '
+                        }}>
+                            <div style={{ marginLeft: '13px', paddingRight: '85px' }}>
+                                <h6 style={{ fontSize: '26px' }}>Lovely Akter</h6>
+                                <p style={{ color: 'gray' }}>52254245512455</p>
+                            </div>
+                            {/* divider start */}
+                            <div style={{ border: '1px solid #d2cfcfc9', height: '28px', position: 'relative', top: '10px' }}></div>
+                            {/* divider end */}
+                            <div style={{ paddingLeft: '25px' }}>
+                                <h6 style={{ fontSize: '24px', color: 'gray' }}>Account Type</h6>
+                                <div className="d-flex">
+                                    <p style={{ color: 'gray', marginRight: '6px' }}>Free</p>
+                                    <h6 className='' style={{ fontSize: '19px', marginRight: '6px' }}>Seller</h6>
+                                    <div style={{ border: '1px solid #d2cfcfc9', height: '15px', position: 'relative', top: '6px' }}></div>
+                                    <p style={{ marginLeft: '5px', fontWeight: '700', fontSize: '14px', marginTop: '3px' }}>Upgrade</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* profile top details end */}
+                        {/* profile verfiy detaails start */}
+                        <div className="verify-details" style={{ marginLeft: '12px', paddingTop: '12px', paddingBottom: '12px' }} >
+                            <h6 style={{ color: 'gray', marginTop: '4px', marginBottom: '13px' }}>NID/Passport is not verified</h6>
+                            <div className="d-flex justify-content-between">
+                                <div className="d-flex">
+                                    <FontAwesomeIcon icon={faCheckCircle} style={{ color: 'green' }} className='me-2' />
+                                    <h6 style={{ fontSize: '14px' }}>Mobile Verified</h6>
+                                </div>
+                                <div>
+                                    <button style={{ border: 'none', padding: '5px 14px ', backgroundColor: '#f94c2d', color: 'white', position: 'relative', bottom: '10px', borderRadius: '4px', right: "12px" }}>
+                                    <FontAwesomeIcon icon={faBell} className='me-2' />Verify</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* profile top details end */}
-                    {/* profile verfiy detaails start */}
-                    <div className="verify-details" style={{ marginLeft: '12px', paddingTop: '12px', paddingBottom: '12px' }} >
-                        <h6 style={{ color: 'gray', marginTop: '4px', marginBottom: '13px' }}>NID/Passport is not verified</h6>
-                        <div className="d-flex justify-content-between">
-                            <div className="d-flex">
-                                <FontAwesomeIcon icon={faCheckCircle} style={{ color: 'green' }} className='me-2' />
-                                <h6 style={{ fontSize: '14px' }}>Mobile Verified</h6>
-                            </div>
-                            <div>
-                                <button style={{ border: 'none', padding: '5px 14px ', backgroundColor: '#f94c2d', color: 'white', position: 'relative', bottom: '10px', borderRadius: '4px', right: "12px" }}>Verify</button>
-                            </div>
-                        </div>
-                    </div>
+                    {/* profile details section end */}
+
                 </div>
-                {/* profile details section end */}
-
             </div>
+            {/* profile content end */}
             {/* post and earn section start */}
-            <div className='post-earn mt-4'>
+            <div className='post-earn' style={{marginTop:'35px'}}>
                 <h6 className='ms-4 mb-2 text-secondary'>Post & Earn</h6>
                 <div className="profile-contents">
-                    <div className='' style={{ width: '470px', margin: 'auto' }}>
+                    <div className='' style={{ width: '470px', margin: 'auto', padding:'0 10px' }}>
 
                         <div style={{ padding: '10px 0px', borderBottom: '1px solid #d2cfcfc9 ' }}>
                             <h6 style={{ fontSize: '25px' }}><span style={{ color: 'gray' }}>Your Earnings : </span> TK 580</h6>
@@ -119,7 +128,7 @@ const ProfileMain = () => {
             </div>
             {/* post and earn section end */}
             {/* account activity section start */}
-            <div className='mt-4'>
+            <div className='mt-3'>
                 <h5 className='ms-4 mb-2 text-secondary'>Account & Activity</h5>
                 <div className="profile-contents">
                     <div style={{}}>
@@ -159,7 +168,7 @@ const ProfileMain = () => {
             </div>
             {/* account activity section end */}
             {/* following seller start */}
-            <div className='mt-4'>
+            <div className='mt-3'>
                 <div className='d-flex justify-content-between'>
                     <h5 className="text-secondary" style={{ fontSize: '18px', marginLeft: '18px' }}>Your Following Seller</h5>
                     <h6 className="text-secondary me-4" style={{ fontSize: "18px", fontWeight: "700" }}>View All</h6>
@@ -251,7 +260,7 @@ const ProfileMain = () => {
             </div>
             {/* following seller end */}
             {/* settings section start */}
-            <div className="mt-4">
+            <div className="mt-3 mb-3">
                 <h6 className='text-secondary ms-4 mb-2'>Settings</h6>
                 <div className="profile-contents" style={{ padding: '10px 0' }}>
                     <div className="accordion accordion-flush" id="accordionFlushExample">
